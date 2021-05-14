@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_user_related_informasi_pembelis",
+  "info": {
+    "name": "informasi_pembeli",
+    "icon": "address-book"
+  },
+  "options": {},
+  "attributes": {
+    "nama_pembeli": {
+      "type": "string"
+    },
+    "no_hp_pembeli": {
+      "type": "string"
+    },
+    "alamat_pembeli": {
+      "type": "text"
+    }
+  }
+}

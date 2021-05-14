@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_vendor_related_penilaians",
+  "info": {
+    "name": "penilaian",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "komentar": {
+      "type": "text"
+    }
+  }
+}

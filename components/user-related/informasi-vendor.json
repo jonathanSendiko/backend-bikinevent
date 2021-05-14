@@ -1,0 +1,105 @@
+{
+  "collectionName": "components_user_related_informasi_vendors",
+  "info": {
+    "name": "informasi_vendor",
+    "icon": "angry",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "jenis_kelamin": {
+      "type": "string"
+    },
+    "vendor_name": {
+      "type": "string"
+    },
+    "foto_wajah": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "foto_ktp": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "foto_buku_tabungan": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "NIK": {
+      "type": "integer"
+    },
+    "tempat_tanggal_lahir": {
+      "type": "string"
+    },
+    "alamat_lengkap": {
+      "type": "text"
+    },
+    "nama_bank": {
+      "type": "string"
+    },
+    "kota_kabupaten": {
+      "type": "string"
+    },
+    "nomor_hp": {
+      "type": "string"
+    },
+    "nama_rekening": {
+      "type": "string"
+    },
+    "foto_toko": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "kode_pos": {
+      "type": "integer"
+    },
+    "no_rekening": {
+      "type": "integer"
+    },
+    "deskripsi": {
+      "type": "richtext"
+    },
+    "penilaian": {
+      "type": "component",
+      "repeatable": true,
+      "component": "vendor-related.penilaian"
+    },
+    "portfolio": {
+      "type": "component",
+      "repeatable": true,
+      "component": "vendor-related.portfolio"
+    }
+  }
+}

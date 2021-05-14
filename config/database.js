@@ -5,13 +5,13 @@ module.exports = ({ env }) => ({
       connector: "mongoose",
       settings: {
         uri: env("DATABASE_URI"),
-        srv: env.bool("DATABASE_SRV", false),
+        srv: env.bool("DATABASE_SRV", true),
         port: env.int("DATABASE_PORT", 27017),
-        database: env("DATABASE_NAME", "strapi-bikinevent"),
+        database: env("DATABASE_NAME"),
       },
       options: {
         authenticationDatabase: env("AUTHENTICATION_DATABASE", null),
-        ssl: env.bool("DATABASE_SSL", false),
+        ssl: env.bool("DATABASE_SSL", true),
       },
     },
   },

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "produks",
+  "info": {
+    "name": "produk",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "lokasi": {
+      "type": "string"
+    },
+    "foto_produk": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "deskripsi_produk": {
+      "type": "richtext"
+    },
+    "harga": {
+      "type": "integer"
+    },
+    "user": {
+      "via": "produks",
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}
