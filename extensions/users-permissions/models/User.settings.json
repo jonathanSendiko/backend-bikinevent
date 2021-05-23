@@ -62,37 +62,18 @@
     "phone_number": {
       "type": "string"
     },
-    "informasi_pembeli": {
-      "type": "component",
-      "repeatable": true,
-      "component": "user-related.informasi-pembeli"
-    },
     "profil_user": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
-        "files",
-        "videos"
+        "images"
       ],
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
     },
-    "order_histories": {
-      "collection": "produk"
-    },
-    "cart": {
-      "collection": "produk"
-    },
-    "informasi_vendor": {
-      "type": "component",
-      "repeatable": false,
-      "component": "user-related.informasi-vendor"
-    },
-    "produks": {
-      "collection": "produk",
-      "via": "user"
+    "nama_lengkap": {
+      "type": "string"
     }
   }
 }

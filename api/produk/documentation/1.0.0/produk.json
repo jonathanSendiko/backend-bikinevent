@@ -604,65 +604,66 @@
           "harga": {
             "type": "integer"
           },
-          "user": {
+          "vendor": {
             "required": [
-              "id",
-              "username",
-              "email"
+              "id"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "username": {
+              "nama_vendor": {
                 "type": "string"
               },
-              "email": {
+              "jenis_kelamin": {
                 "type": "string"
               },
-              "provider": {
+              "NIK": {
+                "type": "integer"
+              },
+              "tempat_tanggal_lahir": {
                 "type": "string"
               },
-              "password": {
+              "alamat_lengkap": {
                 "type": "string"
               },
-              "resetPasswordToken": {
+              "nama_bank": {
                 "type": "string"
               },
-              "confirmationToken": {
+              "kota_kabupaten": {
                 "type": "string"
               },
-              "confirmed": {
-                "type": "boolean"
-              },
-              "blocked": {
-                "type": "boolean"
-              },
-              "role": {
+              "nomor_hp": {
                 "type": "string"
               },
-              "phone_number": {
+              "nama_rekening": {
                 "type": "string"
               },
-              "informasi_pembeli": {
+              "kode_pos": {
+                "type": "integer"
+              },
+              "no_rekening": {
+                "type": "integer"
+              },
+              "deskripsi": {
+                "type": "string"
+              },
+              "foto_wajah": {
+                "type": "string"
+              },
+              "foto_ktp": {
+                "type": "string"
+              },
+              "foto_buku_tabungan": {
+                "type": "string"
+              },
+              "foto_toko": {
+                "type": "string"
+              },
+              "penilaian": {
                 "type": "component"
               },
-              "profil_user": {
-                "type": "string"
-              },
-              "order_histories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "cart": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "informasi_vendor": {
+              "portfolio": {
                 "type": "component"
               },
               "produks": {
@@ -670,6 +671,12 @@
                 "items": {
                   "type": "string"
                 }
+              },
+              "user": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
               },
               "created_by": {
                 "type": "string"
@@ -699,7 +706,7 @@
           "harga": {
             "type": "integer"
           },
-          "user": {
+          "vendor": {
             "type": "string"
           },
           "published_at": {

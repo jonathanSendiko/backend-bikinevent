@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pembelis",
+  "info": {
+    "name": "Pembeli",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "nama_pembeli": {
+      "type": "string"
+    },
+    "no_hp_pembeli": {
+      "type": "string"
+    },
+    "alamat_pembeli": {
+      "type": "string"
+    },
+    "order_histories": {
+      "collection": "produk"
+    },
+    "carts": {
+      "collection": "blog"
+    }
+  }
+}

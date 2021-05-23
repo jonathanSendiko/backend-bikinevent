@@ -36,10 +36,9 @@
     "harga": {
       "type": "integer"
     },
-    "user": {
+    "vendor": {
       "via": "produks",
-      "plugin": "users-permissions",
-      "model": "user"
+      "model": "vendor"
     }
   }
 }

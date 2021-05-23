@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/pembelis",
+      "handler": "pembeli.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pembelis/count",
+      "handler": "pembeli.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/pembelis/:id",
+      "handler": "pembeli.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/pembelis",
+      "handler": "pembeli.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/pembelis/:id",
+      "handler": "pembeli.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/pembelis/:id",
+      "handler": "pembeli.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
