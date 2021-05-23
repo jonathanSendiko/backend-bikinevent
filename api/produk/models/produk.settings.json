@@ -19,7 +19,7 @@
       "type": "string"
     },
     "foto_produk": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images",
@@ -39,6 +39,37 @@
     "vendor": {
       "via": "produks",
       "model": "vendor"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Perlengkapan",
+        "Venue",
+        "Talent",
+        "Jasa",
+        "Catering",
+        "Dekorasi"
+      ]
+    },
+    "rating": {
+      "type": "decimal"
+    },
+    "list_foto_produk": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "penilaian": {
+      "type": "component",
+      "repeatable": true,
+      "component": "vendor-related.penilaian"
     }
   }
 }

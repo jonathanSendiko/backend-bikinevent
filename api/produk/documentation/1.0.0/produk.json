@@ -529,6 +529,175 @@
             "type": "string"
           },
           "foto_produk": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "deskripsi_produk": {
+            "type": "string"
+          },
+          "harga": {
+            "type": "integer"
+          },
+          "vendor": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "nama_vendor": {
+                "type": "string"
+              },
+              "jenis_kelamin": {
+                "type": "string"
+              },
+              "NIK": {
+                "type": "integer"
+              },
+              "tempat_tanggal_lahir": {
+                "type": "string"
+              },
+              "alamat_lengkap": {
+                "type": "string"
+              },
+              "nama_bank": {
+                "type": "string"
+              },
+              "kota_kabupaten": {
+                "type": "string"
+              },
+              "nomor_hp": {
+                "type": "string"
+              },
+              "nama_rekening": {
+                "type": "string"
+              },
+              "kode_pos": {
+                "type": "integer"
+              },
+              "no_rekening": {
+                "type": "integer"
+              },
+              "deskripsi": {
+                "type": "string"
+              },
+              "foto_wajah": {
+                "type": "string"
+              },
+              "foto_ktp": {
+                "type": "string"
+              },
+              "foto_buku_tabungan": {
+                "type": "string"
+              },
+              "foto_toko": {
+                "type": "string"
+              },
+              "portfolio": {
+                "type": "component"
+              },
+              "produks": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "user": {
+                "type": "string"
+              },
+              "foto_profil": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "Perlengkapan",
+              "Venue",
+              "Talent",
+              "Jasa",
+              "Catering",
+              "Dekorasi"
+            ]
+          },
+          "rating": {
+            "type": "number"
+          },
+          "list_foto_produk": {
             "type": "array",
             "items": {
               "required": [
@@ -598,91 +767,74 @@
               }
             }
           },
-          "deskripsi_produk": {
-            "type": "string"
-          },
-          "harga": {
-            "type": "integer"
-          },
-          "vendor": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "nama_vendor": {
-                "type": "string"
-              },
-              "jenis_kelamin": {
-                "type": "string"
-              },
-              "NIK": {
-                "type": "integer"
-              },
-              "tempat_tanggal_lahir": {
-                "type": "string"
-              },
-              "alamat_lengkap": {
-                "type": "string"
-              },
-              "nama_bank": {
-                "type": "string"
-              },
-              "kota_kabupaten": {
-                "type": "string"
-              },
-              "nomor_hp": {
-                "type": "string"
-              },
-              "nama_rekening": {
-                "type": "string"
-              },
-              "kode_pos": {
-                "type": "integer"
-              },
-              "no_rekening": {
-                "type": "integer"
-              },
-              "deskripsi": {
-                "type": "string"
-              },
-              "foto_wajah": {
-                "type": "string"
-              },
-              "foto_ktp": {
-                "type": "string"
-              },
-              "foto_buku_tabungan": {
-                "type": "string"
-              },
-              "foto_toko": {
-                "type": "string"
-              },
-              "penilaian": {
-                "type": "component"
-              },
-              "portfolio": {
-                "type": "component"
-              },
-              "produks": {
-                "type": "array",
-                "items": {
+          "penilaian": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "user": {
+                  "required": [
+                    "id",
+                    "username",
+                    "email"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "username": {
+                      "type": "string"
+                    },
+                    "email": {
+                      "type": "string"
+                    },
+                    "provider": {
+                      "type": "string"
+                    },
+                    "password": {
+                      "type": "string"
+                    },
+                    "resetPasswordToken": {
+                      "type": "string"
+                    },
+                    "confirmationToken": {
+                      "type": "string"
+                    },
+                    "confirmed": {
+                      "type": "boolean"
+                    },
+                    "blocked": {
+                      "type": "boolean"
+                    },
+                    "role": {
+                      "type": "string"
+                    },
+                    "phone_number": {
+                      "type": "string"
+                    },
+                    "nama_lengkap": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "rating": {
+                  "type": "number"
+                },
+                "komentar": {
                   "type": "string"
                 }
-              },
-              "user": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
           },
@@ -708,6 +860,91 @@
           },
           "vendor": {
             "type": "string"
+          },
+          "category": {
+            "type": "string",
+            "enum": [
+              "Perlengkapan",
+              "Venue",
+              "Talent",
+              "Jasa",
+              "Catering",
+              "Dekorasi"
+            ]
+          },
+          "rating": {
+            "type": "number"
+          },
+          "penilaian": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "user": {
+                  "required": [
+                    "id",
+                    "username",
+                    "email"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "username": {
+                      "type": "string"
+                    },
+                    "email": {
+                      "type": "string"
+                    },
+                    "provider": {
+                      "type": "string"
+                    },
+                    "password": {
+                      "type": "string"
+                    },
+                    "resetPasswordToken": {
+                      "type": "string"
+                    },
+                    "confirmationToken": {
+                      "type": "string"
+                    },
+                    "confirmed": {
+                      "type": "boolean"
+                    },
+                    "blocked": {
+                      "type": "boolean"
+                    },
+                    "role": {
+                      "type": "string"
+                    },
+                    "phone_number": {
+                      "type": "string"
+                    },
+                    "nama_lengkap": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "rating": {
+                  "type": "number"
+                },
+                "komentar": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",

@@ -16,20 +16,28 @@
       "plugin": "users-permissions",
       "model": "user"
     },
-    "nama_pembeli": {
-      "type": "string"
-    },
-    "no_hp_pembeli": {
-      "type": "string"
-    },
-    "alamat_pembeli": {
-      "type": "string"
-    },
     "order_histories": {
       "collection": "produk"
     },
     "carts": {
       "collection": "blog"
+    },
+    "informasi_pembeli": {
+      "type": "component",
+      "repeatable": true,
+      "component": "user-related.informasi-pembeli"
+    },
+    "foto_profil": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }

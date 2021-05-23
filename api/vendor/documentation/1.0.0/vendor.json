@@ -826,80 +826,6 @@
               }
             }
           },
-          "penilaian": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "user": {
-                  "required": [
-                    "id",
-                    "username",
-                    "email"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "username": {
-                      "type": "string"
-                    },
-                    "email": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "password": {
-                      "type": "string"
-                    },
-                    "resetPasswordToken": {
-                      "type": "string"
-                    },
-                    "confirmationToken": {
-                      "type": "string"
-                    },
-                    "confirmed": {
-                      "type": "boolean"
-                    },
-                    "blocked": {
-                      "type": "boolean"
-                    },
-                    "role": {
-                      "type": "string"
-                    },
-                    "phone_number": {
-                      "type": "string"
-                    },
-                    "profil_user": {
-                      "type": "string"
-                    },
-                    "nama_lengkap": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                },
-                "rating": {
-                  "type": "number"
-                },
-                "komentar": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "portfolio": {
             "type": "array",
             "items": {
@@ -1004,10 +930,7 @@
                   "type": "string"
                 },
                 "foto_produk": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                  "type": "string"
                 },
                 "deskripsi_produk": {
                   "type": "string"
@@ -1017,6 +940,29 @@
                 },
                 "vendor": {
                   "type": "string"
+                },
+                "category": {
+                  "type": "string",
+                  "enum": [
+                    "Perlengkapan",
+                    "Venue",
+                    "Talent",
+                    "Jasa",
+                    "Catering",
+                    "Dekorasi"
+                  ]
+                },
+                "rating": {
+                  "type": "number"
+                },
+                "list_foto_produk": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "penilaian": {
+                  "type": "component"
                 },
                 "published_at": {
                   "type": "string"
@@ -1070,10 +1016,74 @@
               "phone_number": {
                 "type": "string"
               },
-              "profil_user": {
+              "nama_lengkap": {
                 "type": "string"
               },
-              "nama_lengkap": {
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "foto_profil": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
                 "type": "string"
               },
               "created_by": {
@@ -1127,80 +1137,6 @@
           },
           "deskripsi": {
             "type": "string"
-          },
-          "penilaian": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "user": {
-                  "required": [
-                    "id",
-                    "username",
-                    "email"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "username": {
-                      "type": "string"
-                    },
-                    "email": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "password": {
-                      "type": "string"
-                    },
-                    "resetPasswordToken": {
-                      "type": "string"
-                    },
-                    "confirmationToken": {
-                      "type": "string"
-                    },
-                    "confirmed": {
-                      "type": "boolean"
-                    },
-                    "blocked": {
-                      "type": "boolean"
-                    },
-                    "role": {
-                      "type": "string"
-                    },
-                    "phone_number": {
-                      "type": "string"
-                    },
-                    "profil_user": {
-                      "type": "string"
-                    },
-                    "nama_lengkap": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                },
-                "rating": {
-                  "type": "number"
-                },
-                "komentar": {
-                  "type": "string"
-                }
-              }
-            }
           },
           "portfolio": {
             "type": "array",

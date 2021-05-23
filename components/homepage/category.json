@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_homepage_categories",
+  "info": {
+    "name": "category",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Perlengkapan",
+        "Venue",
+        "Talent",
+        "Jasa",
+        "Catering",
+        "Dekorasi"
+      ]
+    },
+    "produks": {
+      "collection": "produk"
+    }
+  }
+}

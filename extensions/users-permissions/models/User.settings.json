@@ -62,16 +62,6 @@
     "phone_number": {
       "type": "string"
     },
-    "profil_user": {
-      "model": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "nama_lengkap": {
       "type": "string"
     }

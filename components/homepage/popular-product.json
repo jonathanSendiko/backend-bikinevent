@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_homepage_popular_products",
+  "info": {
+    "name": "popular_product",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "produks": {
+      "collection": "produk"
+    }
+  }
+}

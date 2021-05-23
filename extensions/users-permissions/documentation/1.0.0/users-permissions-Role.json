@@ -564,9 +564,6 @@
                 "phone_number": {
                   "type": "string"
                 },
-                "profil_user": {
-                  "type": "string"
-                },
                 "nama_lengkap": {
                   "type": "string"
                 },

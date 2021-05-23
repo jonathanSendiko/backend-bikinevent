@@ -562,9 +562,6 @@
               "phone_number": {
                 "type": "string"
               },
-              "profil_user": {
-                "type": "string"
-              },
               "nama_lengkap": {
                 "type": "string"
               },
@@ -575,15 +572,6 @@
                 "type": "string"
               }
             }
-          },
-          "nama_pembeli": {
-            "type": "string"
-          },
-          "no_hp_pembeli": {
-            "type": "string"
-          },
-          "alamat_pembeli": {
-            "type": "string"
           },
           "order_histories": {
             "type": "array",
@@ -602,10 +590,7 @@
                   "type": "string"
                 },
                 "foto_produk": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                  "type": "string"
                 },
                 "deskripsi_produk": {
                   "type": "string"
@@ -615,6 +600,29 @@
                 },
                 "vendor": {
                   "type": "string"
+                },
+                "category": {
+                  "type": "string",
+                  "enum": [
+                    "Perlengkapan",
+                    "Venue",
+                    "Talent",
+                    "Jasa",
+                    "Catering",
+                    "Dekorasi"
+                  ]
+                },
+                "rating": {
+                  "type": "number"
+                },
+                "list_foto_produk": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "penilaian": {
+                  "type": "component"
                 },
                 "published_at": {
                   "type": "string"
@@ -656,6 +664,96 @@
               }
             }
           },
+          "informasi_pembeli": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "nama_pembeli": {
+                  "type": "string"
+                },
+                "no_hp_pembeli": {
+                  "type": "string"
+                },
+                "alamat_pembeli": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "foto_profil": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -665,15 +763,6 @@
       "NewPembeli": {
         "properties": {
           "user": {
-            "type": "string"
-          },
-          "nama_pembeli": {
-            "type": "string"
-          },
-          "no_hp_pembeli": {
-            "type": "string"
-          },
-          "alamat_pembeli": {
             "type": "string"
           },
           "order_histories": {
@@ -686,6 +775,29 @@
             "type": "array",
             "items": {
               "type": "string"
+            }
+          },
+          "informasi_pembeli": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "nama_pembeli": {
+                  "type": "string"
+                },
+                "no_hp_pembeli": {
+                  "type": "string"
+                },
+                "alamat_pembeli": {
+                  "type": "string"
+                }
+              }
             }
           },
           "published_at": {

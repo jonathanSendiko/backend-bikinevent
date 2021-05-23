@@ -96,23 +96,30 @@
       "required": false,
       "pluginOptions": {}
     },
-    "penilaian": {
-      "type": "component",
-      "repeatable": true,
-      "component": "vendor-related.penilaian"
-    },
     "portfolio": {
       "type": "component",
       "repeatable": true,
       "component": "vendor-related.portfolio"
     },
     "produks": {
-      "collection": "produk",
-      "via": "vendor"
+      "via": "vendor",
+      "collection": "produk"
     },
     "user": {
       "plugin": "users-permissions",
       "model": "user"
+    },
+    "foto_profil": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
     }
   }
 }
