@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/23/2021 3:55:10 PM"
+    "x-generation-date": "05/25/2021 10:12:35 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5199,6 +5199,9 @@
               "nama_lengkap": {
                 "type": "string"
               },
+              "vendor": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -5753,6 +5756,9 @@
                     "nama_lengkap": {
                       "type": "string"
                     },
+                    "vendor": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -5859,6 +5865,9 @@
                       "type": "string"
                     },
                     "nama_lengkap": {
+                      "type": "string"
+                    },
+                    "vendor": {
                       "type": "string"
                     },
                     "created_by": {
@@ -6395,6 +6404,9 @@
               "nama_lengkap": {
                 "type": "string"
               },
+              "vendor": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -6727,6 +6739,9 @@
                 "nama_lengkap": {
                   "type": "string"
                 },
+                "vendor": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },
@@ -6845,6 +6860,88 @@
           },
           "nama_lengkap": {
             "type": "string"
+          },
+          "vendor": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "nama_vendor": {
+                "type": "string"
+              },
+              "jenis_kelamin": {
+                "type": "string"
+              },
+              "NIK": {
+                "type": "integer"
+              },
+              "tempat_tanggal_lahir": {
+                "type": "string"
+              },
+              "alamat_lengkap": {
+                "type": "string"
+              },
+              "nama_bank": {
+                "type": "string"
+              },
+              "kota_kabupaten": {
+                "type": "string"
+              },
+              "nomor_hp": {
+                "type": "string"
+              },
+              "nama_rekening": {
+                "type": "string"
+              },
+              "kode_pos": {
+                "type": "integer"
+              },
+              "no_rekening": {
+                "type": "integer"
+              },
+              "deskripsi": {
+                "type": "string"
+              },
+              "foto_wajah": {
+                "type": "string"
+              },
+              "foto_ktp": {
+                "type": "string"
+              },
+              "foto_buku_tabungan": {
+                "type": "string"
+              },
+              "foto_toko": {
+                "type": "string"
+              },
+              "portfolio": {
+                "type": "component"
+              },
+              "produks": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "user": {
+                "type": "string"
+              },
+              "foto_profil": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -6891,6 +6988,9 @@
             "type": "string"
           },
           "nama_lengkap": {
+            "type": "string"
+          },
+          "vendor": {
             "type": "string"
           },
           "created_by": {

@@ -821,6 +821,9 @@
                     "nama_lengkap": {
                       "type": "string"
                     },
+                    "vendor": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -927,6 +930,9 @@
                       "type": "string"
                     },
                     "nama_lengkap": {
+                      "type": "string"
+                    },
+                    "vendor": {
                       "type": "string"
                     },
                     "created_by": {

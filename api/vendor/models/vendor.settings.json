@@ -107,7 +107,8 @@
     },
     "user": {
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "vendor"
     },
     "foto_profil": {
       "model": "file",

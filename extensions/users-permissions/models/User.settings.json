@@ -64,6 +64,10 @@
     },
     "nama_lengkap": {
       "type": "string"
+    },
+    "vendor": {
+      "via": "user",
+      "model": "vendor"
     }
   }
 }
