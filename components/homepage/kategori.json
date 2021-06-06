@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_homepage_kategoris",
+  "info": {
+    "name": "kategori",
+    "icon": "air-freshener"
+  },
+  "options": {},
+  "attributes": {
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Perlengkapan",
+        "Venue",
+        "Talent",
+        "Jasa",
+        "Catering",
+        "Dekorasi"
+      ]
+    },
+    "gambar_kategori": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
