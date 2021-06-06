@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "05/25/2021 10:12:35 PM"
+    "x-generation-date": "06/06/2021 1:53:19 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4703,6 +4703,9 @@
               }
             }
           },
+          "judul_artikel": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -4712,6 +4715,9 @@
       "NewBlog": {
         "properties": {
           "konten_blog": {
+            "type": "string"
+          },
+          "judul_artikel": {
             "type": "string"
           },
           "published_at": {
@@ -5202,6 +5208,9 @@
               "vendor": {
                 "type": "string"
               },
+              "foto_profil": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -5287,6 +5296,9 @@
                   "type": "string"
                 },
                 "media_artikel": {
+                  "type": "string"
+                },
+                "judul_artikel": {
                   "type": "string"
                 },
                 "published_at": {
@@ -5607,6 +5619,9 @@
               "foto_profil": {
                 "type": "string"
               },
+              "comments": {
+                "type": "component"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -5759,6 +5774,9 @@
                     "vendor": {
                       "type": "string"
                     },
+                    "foto_profil": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -5868,6 +5886,9 @@
                       "type": "string"
                     },
                     "vendor": {
+                      "type": "string"
+                    },
+                    "foto_profil": {
                       "type": "string"
                     },
                     "created_by": {
@@ -6407,6 +6428,9 @@
               "vendor": {
                 "type": "string"
               },
+              "foto_profil": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -6479,6 +6503,83 @@
               },
               "updated_by": {
                 "type": "string"
+              }
+            }
+          },
+          "comments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "user": {
+                  "required": [
+                    "id",
+                    "username",
+                    "email"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "username": {
+                      "type": "string"
+                    },
+                    "email": {
+                      "type": "string"
+                    },
+                    "provider": {
+                      "type": "string"
+                    },
+                    "password": {
+                      "type": "string"
+                    },
+                    "resetPasswordToken": {
+                      "type": "string"
+                    },
+                    "confirmationToken": {
+                      "type": "string"
+                    },
+                    "confirmed": {
+                      "type": "boolean"
+                    },
+                    "blocked": {
+                      "type": "boolean"
+                    },
+                    "role": {
+                      "type": "string"
+                    },
+                    "phone_number": {
+                      "type": "string"
+                    },
+                    "nama_lengkap": {
+                      "type": "string"
+                    },
+                    "vendor": {
+                      "type": "string"
+                    },
+                    "foto_profil": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "rating": {
+                  "type": "number"
+                },
+                "komentar": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -6622,6 +6723,83 @@
           "user": {
             "type": "string"
           },
+          "comments": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "user": {
+                  "required": [
+                    "id",
+                    "username",
+                    "email"
+                  ],
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "username": {
+                      "type": "string"
+                    },
+                    "email": {
+                      "type": "string"
+                    },
+                    "provider": {
+                      "type": "string"
+                    },
+                    "password": {
+                      "type": "string"
+                    },
+                    "resetPasswordToken": {
+                      "type": "string"
+                    },
+                    "confirmationToken": {
+                      "type": "string"
+                    },
+                    "confirmed": {
+                      "type": "boolean"
+                    },
+                    "blocked": {
+                      "type": "boolean"
+                    },
+                    "role": {
+                      "type": "string"
+                    },
+                    "phone_number": {
+                      "type": "string"
+                    },
+                    "nama_lengkap": {
+                      "type": "string"
+                    },
+                    "vendor": {
+                      "type": "string"
+                    },
+                    "foto_profil": {
+                      "type": "string"
+                    },
+                    "created_by": {
+                      "type": "string"
+                    },
+                    "updated_by": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "rating": {
+                  "type": "number"
+                },
+                "komentar": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6740,6 +6918,9 @@
                   "type": "string"
                 },
                 "vendor": {
+                  "type": "string"
+                },
+                "foto_profil": {
                   "type": "string"
                 },
                 "created_by": {
@@ -6932,7 +7113,77 @@
               "foto_profil": {
                 "type": "string"
               },
+              "comments": {
+                "type": "component"
+              },
               "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
+          },
+          "foto_profil": {
+            "required": [
+              "id",
+              "name",
+              "hash",
+              "mime",
+              "size",
+              "url",
+              "provider"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "alternativeText": {
+                "type": "string"
+              },
+              "caption": {
+                "type": "string"
+              },
+              "width": {
+                "type": "integer"
+              },
+              "height": {
+                "type": "integer"
+              },
+              "formats": {
+                "type": "object"
+              },
+              "hash": {
+                "type": "string"
+              },
+              "ext": {
+                "type": "string"
+              },
+              "mime": {
+                "type": "string"
+              },
+              "size": {
+                "type": "number"
+              },
+              "url": {
+                "type": "string"
+              },
+              "previewUrl": {
+                "type": "string"
+              },
+              "provider": {
+                "type": "string"
+              },
+              "provider_metadata": {
+                "type": "object"
+              },
+              "related": {
                 "type": "string"
               },
               "created_by": {

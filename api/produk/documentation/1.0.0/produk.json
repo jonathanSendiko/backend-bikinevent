@@ -672,6 +672,9 @@
               "foto_profil": {
                 "type": "string"
               },
+              "comments": {
+                "type": "component"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -824,6 +827,9 @@
                     "vendor": {
                       "type": "string"
                     },
+                    "foto_profil": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -933,6 +939,9 @@
                       "type": "string"
                     },
                     "vendor": {
+                      "type": "string"
+                    },
+                    "foto_profil": {
                       "type": "string"
                     },
                     "created_by": {

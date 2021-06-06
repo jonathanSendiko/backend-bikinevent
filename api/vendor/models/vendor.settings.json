@@ -106,9 +106,9 @@
       "collection": "produk"
     },
     "user": {
+      "via": "vendor",
       "plugin": "users-permissions",
-      "model": "user",
-      "via": "vendor"
+      "model": "user"
     },
     "foto_profil": {
       "model": "file",
@@ -121,6 +121,11 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "comments": {
+      "type": "component",
+      "repeatable": true,
+      "component": "vendor-related.penilaian"
     }
   }
 }

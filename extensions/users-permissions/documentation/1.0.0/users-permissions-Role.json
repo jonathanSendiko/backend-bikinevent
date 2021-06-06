@@ -570,6 +570,9 @@
                 "vendor": {
                   "type": "string"
                 },
+                "foto_profil": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },

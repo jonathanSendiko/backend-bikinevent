@@ -568,6 +568,9 @@
               "vendor": {
                 "type": "string"
               },
+              "foto_profil": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -653,6 +656,9 @@
                   "type": "string"
                 },
                 "media_artikel": {
+                  "type": "string"
+                },
+                "judul_artikel": {
                   "type": "string"
                 },
                 "published_at": {

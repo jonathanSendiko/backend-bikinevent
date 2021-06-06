@@ -592,6 +592,9 @@
               }
             }
           },
+          "judul_artikel": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -601,6 +604,9 @@
       "NewBlog": {
         "properties": {
           "konten_blog": {
+            "type": "string"
+          },
+          "judul_artikel": {
             "type": "string"
           },
           "published_at": {
