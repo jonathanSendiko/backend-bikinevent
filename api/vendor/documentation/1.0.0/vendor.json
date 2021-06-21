@@ -930,7 +930,10 @@
                   "type": "string"
                 },
                 "foto_produk": {
-                  "type": "string"
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "deskripsi_produk": {
                   "type": "string"
@@ -954,12 +957,6 @@
                 },
                 "rating": {
                   "type": "number"
-                },
-                "list_foto_produk": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
                 },
                 "penilaian": {
                   "type": "component"

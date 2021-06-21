@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/20/2021 9:01:09 PM"
+    "x-generation-date": "06/21/2021 11:46:53 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4956,7 +4956,10 @@
                       "type": "string"
                     },
                     "foto_produk": {
-                      "type": "string"
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
                     },
                     "deskripsi_produk": {
                       "type": "string"
@@ -4980,12 +4983,6 @@
                     },
                     "rating": {
                       "type": "number"
-                    },
-                    "list_foto_produk": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
                     },
                     "penilaian": {
                       "type": "component"
@@ -5046,7 +5043,10 @@
                         "type": "string"
                       },
                       "foto_produk": {
-                        "type": "string"
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
                       },
                       "deskripsi_produk": {
                         "type": "string"
@@ -5070,12 +5070,6 @@
                       },
                       "rating": {
                         "type": "number"
-                      },
-                      "list_foto_produk": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
                       },
                       "penilaian": {
                         "type": "component"
@@ -5224,7 +5218,10 @@
                       "type": "string"
                     },
                     "foto_produk": {
-                      "type": "string"
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
                     },
                     "deskripsi_produk": {
                       "type": "string"
@@ -5248,12 +5245,6 @@
                     },
                     "rating": {
                       "type": "number"
-                    },
-                    "list_foto_produk": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
                     },
                     "penilaian": {
                       "type": "component"
@@ -5314,7 +5305,10 @@
                         "type": "string"
                       },
                       "foto_produk": {
-                        "type": "string"
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
                       },
                       "deskripsi_produk": {
                         "type": "string"
@@ -5338,12 +5332,6 @@
                       },
                       "rating": {
                         "type": "number"
-                      },
-                      "list_foto_produk": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
                       },
                       "penilaian": {
                         "type": "component"
@@ -5552,7 +5540,10 @@
                   "type": "string"
                 },
                 "foto_produk": {
-                  "type": "string"
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "deskripsi_produk": {
                   "type": "string"
@@ -5576,12 +5567,6 @@
                 },
                 "rating": {
                   "type": "number"
-                },
-                "list_foto_produk": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
                 },
                 "penilaian": {
                   "type": "component"
@@ -5795,69 +5780,72 @@
             "type": "string"
           },
           "foto_produk": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "alternativeText": {
-                "type": "string"
-              },
-              "caption": {
-                "type": "string"
-              },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "name",
+                "hash",
+                "mime",
+                "size",
+                "url",
+                "provider"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "alternativeText": {
+                  "type": "string"
+                },
+                "caption": {
+                  "type": "string"
+                },
+                "width": {
+                  "type": "integer"
+                },
+                "height": {
+                  "type": "integer"
+                },
+                "formats": {
+                  "type": "object"
+                },
+                "hash": {
+                  "type": "string"
+                },
+                "ext": {
+                  "type": "string"
+                },
+                "mime": {
+                  "type": "string"
+                },
+                "size": {
+                  "type": "number"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "previewUrl": {
+                  "type": "string"
+                },
+                "provider": {
+                  "type": "string"
+                },
+                "provider_metadata": {
+                  "type": "object"
+                },
+                "related": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
               }
             }
           },
@@ -5965,76 +5953,6 @@
           },
           "rating": {
             "type": "number"
-          },
-          "list_foto_produk": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
           },
           "penilaian": {
             "type": "array",
@@ -6713,7 +6631,10 @@
                   "type": "string"
                 },
                 "foto_produk": {
-                  "type": "string"
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "deskripsi_produk": {
                   "type": "string"
@@ -6737,12 +6658,6 @@
                 },
                 "rating": {
                   "type": "number"
-                },
-                "list_foto_produk": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
                 },
                 "penilaian": {
                   "type": "component"
