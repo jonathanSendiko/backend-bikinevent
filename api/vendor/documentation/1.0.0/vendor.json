@@ -964,6 +964,9 @@
                 "penilaian": {
                   "type": "component"
                 },
+                "isArchived": {
+                  "type": "boolean"
+                },
                 "published_at": {
                   "type": "string"
                 },

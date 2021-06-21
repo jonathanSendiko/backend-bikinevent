@@ -448,6 +448,9 @@
                     "penilaian": {
                       "type": "component"
                     },
+                    "isArchived": {
+                      "type": "boolean"
+                    },
                     "published_at": {
                       "type": "string"
                     },
@@ -534,6 +537,9 @@
                       },
                       "penilaian": {
                         "type": "component"
+                      },
+                      "isArchived": {
+                        "type": "boolean"
                       },
                       "published_at": {
                         "type": "string"
@@ -710,6 +716,9 @@
                     "penilaian": {
                       "type": "component"
                     },
+                    "isArchived": {
+                      "type": "boolean"
+                    },
                     "published_at": {
                       "type": "string"
                     },
@@ -796,6 +805,9 @@
                       },
                       "penilaian": {
                         "type": "component"
+                      },
+                      "isArchived": {
+                        "type": "boolean"
                       },
                       "published_at": {
                         "type": "string"
