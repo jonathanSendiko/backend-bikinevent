@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/produks": {
+    "/portfolios": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -12,7 +12,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Produk"
+                    "$ref": "#/components/schemas/Portfolio"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Produk"
+          "Portfolio"
         ],
         "parameters": [
           {
@@ -201,7 +201,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Produk"
+                  "$ref": "#/components/schemas/Portfolio"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Produk"
+          "Portfolio"
         ],
         "requestBody": {
           "description": "",
@@ -247,14 +247,14 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProduk"
+                "$ref": "#/components/schemas/NewPortfolio"
               }
             }
           }
         }
       }
     },
-    "/produks/count": {
+    "/portfolios/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -306,12 +306,12 @@
         },
         "summary": "",
         "tags": [
-          "Produk"
+          "Portfolio"
         ],
         "parameters": []
       }
     },
-    "/produks/{id}": {
+    "/portfolios/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +321,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Produk"
+                  "$ref": "#/components/schemas/Portfolio"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Produk"
+          "Portfolio"
         ],
         "parameters": [
           {
@@ -383,7 +383,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Produk"
+                  "$ref": "#/components/schemas/Portfolio"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Produk"
+          "Portfolio"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProduk"
+                "$ref": "#/components/schemas/NewPortfolio"
               }
             }
           }
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Produk"
+          "Portfolio"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Produk": {
+      "Portfolio": {
         "required": [
           "id"
         ],
@@ -525,10 +525,7 @@
           "nama": {
             "type": "string"
           },
-          "lokasi": {
-            "type": "string"
-          },
-          "foto_produk": {
+          "foto_portfolio": {
             "type": "array",
             "items": {
               "required": [
@@ -597,12 +594,6 @@
                 }
               }
             }
-          },
-          "deskripsi_produk": {
-            "type": "string"
-          },
-          "harga": {
-            "type": "integer"
           },
           "vendor": {
             "required": [
@@ -695,216 +686,19 @@
               }
             }
           },
-          "category": {
-            "type": "string",
-            "enum": [
-              "Perlengkapan",
-              "Venue",
-              "Talent",
-              "Jasa",
-              "Catering",
-              "Dekorasi"
-            ]
-          },
-          "rating": {
-            "type": "number"
-          },
-          "penilaian": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "user": {
-                  "required": [
-                    "id",
-                    "username",
-                    "email"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "username": {
-                      "type": "string"
-                    },
-                    "email": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "password": {
-                      "type": "string"
-                    },
-                    "resetPasswordToken": {
-                      "type": "string"
-                    },
-                    "confirmationToken": {
-                      "type": "string"
-                    },
-                    "confirmed": {
-                      "type": "boolean"
-                    },
-                    "blocked": {
-                      "type": "boolean"
-                    },
-                    "role": {
-                      "type": "string"
-                    },
-                    "phone_number": {
-                      "type": "string"
-                    },
-                    "nama_lengkap": {
-                      "type": "string"
-                    },
-                    "vendor": {
-                      "type": "string"
-                    },
-                    "foto_profil": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                },
-                "rating": {
-                  "type": "number"
-                },
-                "komentar": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "isArchived": {
-            "type": "boolean"
-          },
           "published_at": {
             "type": "string",
             "format": "date-time"
           }
         }
       },
-      "NewProduk": {
+      "NewPortfolio": {
         "properties": {
           "nama": {
             "type": "string"
           },
-          "lokasi": {
-            "type": "string"
-          },
-          "deskripsi_produk": {
-            "type": "string"
-          },
-          "harga": {
-            "type": "integer"
-          },
           "vendor": {
             "type": "string"
-          },
-          "category": {
-            "type": "string",
-            "enum": [
-              "Perlengkapan",
-              "Venue",
-              "Talent",
-              "Jasa",
-              "Catering",
-              "Dekorasi"
-            ]
-          },
-          "rating": {
-            "type": "number"
-          },
-          "penilaian": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "user": {
-                  "required": [
-                    "id",
-                    "username",
-                    "email"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "username": {
-                      "type": "string"
-                    },
-                    "email": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "password": {
-                      "type": "string"
-                    },
-                    "resetPasswordToken": {
-                      "type": "string"
-                    },
-                    "confirmationToken": {
-                      "type": "string"
-                    },
-                    "confirmed": {
-                      "type": "boolean"
-                    },
-                    "blocked": {
-                      "type": "boolean"
-                    },
-                    "role": {
-                      "type": "string"
-                    },
-                    "phone_number": {
-                      "type": "string"
-                    },
-                    "nama_lengkap": {
-                      "type": "string"
-                    },
-                    "vendor": {
-                      "type": "string"
-                    },
-                    "foto_profil": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                },
-                "rating": {
-                  "type": "number"
-                },
-                "komentar": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "isArchived": {
-            "type": "boolean"
           },
           "published_at": {
             "type": "string",
@@ -922,7 +716,7 @@
   },
   "tags": [
     {
-      "name": "Produk"
+      "name": "Portfolio"
     }
   ]
 }

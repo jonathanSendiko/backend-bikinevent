@@ -1313,9 +1313,6 @@
               "foto_toko": {
                 "type": "string"
               },
-              "portfolio": {
-                "type": "component"
-              },
               "produks": {
                 "type": "array",
                 "items": {
@@ -1330,6 +1327,15 @@
               },
               "comments": {
                 "type": "component"
+              },
+              "portfolios": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "location": {
+                "type": "string"
               },
               "published_at": {
                 "type": "string"

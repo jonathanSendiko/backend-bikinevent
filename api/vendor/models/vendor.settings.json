@@ -96,11 +96,6 @@
       "required": false,
       "pluginOptions": {}
     },
-    "portfolio": {
-      "type": "component",
-      "repeatable": true,
-      "component": "vendor-related.portfolio"
-    },
     "produks": {
       "via": "vendor",
       "collection": "produk"
@@ -126,6 +121,13 @@
       "type": "component",
       "repeatable": true,
       "component": "vendor-related.penilaian"
+    },
+    "portfolios": {
+      "collection": "portfolio",
+      "via": "vendor"
+    },
+    "location": {
+      "type": "string"
     }
   }
 }
