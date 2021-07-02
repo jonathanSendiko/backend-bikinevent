@@ -5,5 +5,7 @@ module.exports = ({ env }) => ({
     auth: {
       secret: env("ADMIN_JWT_SECRET"),
     },
+    url:"https://bikinevent.id/dashboard"
   },
+  url:"/api"
 });
