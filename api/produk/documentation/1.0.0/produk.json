@@ -789,6 +789,9 @@
           "isArchived": {
             "type": "boolean"
           },
+          "subcategory": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -905,6 +908,9 @@
           },
           "isArchived": {
             "type": "boolean"
+          },
+          "subcategory": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",

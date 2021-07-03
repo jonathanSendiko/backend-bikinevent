@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "06/28/2021 3:04:06 PM"
+    "x-generation-date": "07/03/2021 3:11:36 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -5381,6 +5381,9 @@
                     "isArchived": {
                       "type": "boolean"
                     },
+                    "subcategory": {
+                      "type": "string"
+                    },
                     "published_at": {
                       "type": "string"
                     },
@@ -5467,6 +5470,9 @@
                       },
                       "isArchived": {
                         "type": "boolean"
+                      },
+                      "subcategory": {
+                        "type": "string"
                       },
                       "published_at": {
                         "type": "string"
@@ -5643,6 +5649,9 @@
                     "isArchived": {
                       "type": "boolean"
                     },
+                    "subcategory": {
+                      "type": "string"
+                    },
                     "published_at": {
                       "type": "string"
                     },
@@ -5729,6 +5738,9 @@
                       },
                       "isArchived": {
                         "type": "boolean"
+                      },
+                      "subcategory": {
+                        "type": "string"
                       },
                       "published_at": {
                         "type": "string"
@@ -5964,6 +5976,9 @@
                 },
                 "isArchived": {
                   "type": "boolean"
+                },
+                "subcategory": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -6629,6 +6644,9 @@
           "isArchived": {
             "type": "boolean"
           },
+          "subcategory": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6745,6 +6763,9 @@
           },
           "isArchived": {
             "type": "boolean"
+          },
+          "subcategory": {
+            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -7120,6 +7141,9 @@
                 },
                 "isArchived": {
                   "type": "boolean"
+                },
+                "subcategory": {
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"

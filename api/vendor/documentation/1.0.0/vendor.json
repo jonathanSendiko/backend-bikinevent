@@ -877,6 +877,9 @@
                 "isArchived": {
                   "type": "boolean"
                 },
+                "subcategory": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
