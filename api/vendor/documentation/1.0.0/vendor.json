@@ -880,6 +880,9 @@
                 "subcategory": {
                   "type": "string"
                 },
+                "tags": {
+                  "type": "component"
+                },
                 "published_at": {
                   "type": "string"
                 },

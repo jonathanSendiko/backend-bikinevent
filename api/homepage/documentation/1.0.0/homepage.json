@@ -451,6 +451,9 @@
                     "subcategory": {
                       "type": "string"
                     },
+                    "tags": {
+                      "type": "component"
+                    },
                     "published_at": {
                       "type": "string"
                     },
@@ -540,6 +543,9 @@
                       },
                       "subcategory": {
                         "type": "string"
+                      },
+                      "tags": {
+                        "type": "component"
                       },
                       "published_at": {
                         "type": "string"
@@ -719,6 +725,9 @@
                     "subcategory": {
                       "type": "string"
                     },
+                    "tags": {
+                      "type": "component"
+                    },
                     "published_at": {
                       "type": "string"
                     },
@@ -808,6 +817,9 @@
                       },
                       "subcategory": {
                         "type": "string"
+                      },
+                      "tags": {
+                        "type": "component"
                       },
                       "published_at": {
                         "type": "string"

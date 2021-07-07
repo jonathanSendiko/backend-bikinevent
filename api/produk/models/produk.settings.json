@@ -64,6 +64,11 @@
     },
     "subcategory": {
       "type": "string"
+    },
+    "tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.tags"
     }
   }
 }
