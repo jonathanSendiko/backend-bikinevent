@@ -452,7 +452,10 @@
                       "type": "string"
                     },
                     "tags": {
-                      "type": "component"
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
                     },
                     "published_at": {
                       "type": "string"
@@ -545,7 +548,10 @@
                         "type": "string"
                       },
                       "tags": {
-                        "type": "component"
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
                       },
                       "published_at": {
                         "type": "string"
@@ -726,7 +732,10 @@
                       "type": "string"
                     },
                     "tags": {
-                      "type": "component"
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
                     },
                     "published_at": {
                       "type": "string"
@@ -819,7 +828,10 @@
                         "type": "string"
                       },
                       "tags": {
-                        "type": "component"
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
                       },
                       "published_at": {
                         "type": "string"

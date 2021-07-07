@@ -1,18 +1,18 @@
 {
   "paths": {
-    "/produks": {
+    "/tags": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find all the tags's records",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve tags document(s)",
             "content": {
               "application/json": {
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Produk"
+                    "$ref": "#/components/schemas/Tags"
                   }
                 }
               }
@@ -51,7 +51,7 @@
         },
         "summary": "",
         "tags": [
-          "Produk"
+          "Tags"
         ],
         "parameters": [
           {
@@ -194,14 +194,14 @@
       },
       "post": {
         "deprecated": false,
-        "description": "Create a new record",
+        "description": "Create a new tags record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve tags document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Produk"
+                  "$ref": "#/components/schemas/Tags"
                 }
               }
             }
@@ -239,7 +239,7 @@
         },
         "summary": "",
         "tags": [
-          "Produk"
+          "Tags"
         ],
         "requestBody": {
           "description": "",
@@ -247,20 +247,20 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProduk"
+                "$ref": "#/components/schemas/NewTags"
               }
             }
           }
         }
       }
     },
-    "/produks/count": {
+    "/tags/count": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Retrieve the numver of tags documents",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve tags document(s)",
             "content": {
               "application/json": {
                 "schema": {
@@ -306,22 +306,22 @@
         },
         "summary": "",
         "tags": [
-          "Produk"
+          "Tags"
         ],
         "parameters": []
       }
     },
-    "/produks/{id}": {
+    "/tags/{id}": {
       "get": {
         "deprecated": false,
-        "description": "",
+        "description": "Find one tags record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve tags document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Produk"
+                  "$ref": "#/components/schemas/Tags"
                 }
               }
             }
@@ -359,7 +359,7 @@
         },
         "summary": "",
         "tags": [
-          "Produk"
+          "Tags"
         ],
         "parameters": [
           {
@@ -376,14 +376,14 @@
       },
       "put": {
         "deprecated": false,
-        "description": "Update a record",
+        "description": "Update a single tags record",
         "responses": {
           "200": {
-            "description": "response",
+            "description": "Retrieve tags document(s)",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Produk"
+                  "$ref": "#/components/schemas/Tags"
                 }
               }
             }
@@ -421,7 +421,7 @@
         },
         "summary": "",
         "tags": [
-          "Produk"
+          "Tags"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +429,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewProduk"
+                "$ref": "#/components/schemas/NewTags"
               }
             }
           }
@@ -449,10 +449,10 @@
       },
       "delete": {
         "deprecated": false,
-        "description": "Delete a record",
+        "description": "Delete a single tags record",
         "responses": {
           "200": {
-            "description": "deletes a single record based on the ID supplied",
+            "description": "deletes a single tags based on the ID supplied",
             "content": {
               "application/json": {
                 "schema": {
@@ -495,7 +495,7 @@
         },
         "summary": "",
         "tags": [
-          "Produk"
+          "Tags"
         ],
         "parameters": [
           {
@@ -514,7 +514,7 @@
   },
   "components": {
     "schemas": {
-      "Produk": {
+      "Tags": {
         "required": [
           "id"
         ],
@@ -522,300 +522,8 @@
           "id": {
             "type": "string"
           },
-          "nama": {
+          "tag_name": {
             "type": "string"
-          },
-          "lokasi": {
-            "type": "string"
-          },
-          "foto_produk": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id",
-                "name",
-                "hash",
-                "mime",
-                "size",
-                "url",
-                "provider"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "alternativeText": {
-                  "type": "string"
-                },
-                "caption": {
-                  "type": "string"
-                },
-                "width": {
-                  "type": "integer"
-                },
-                "height": {
-                  "type": "integer"
-                },
-                "formats": {
-                  "type": "object"
-                },
-                "hash": {
-                  "type": "string"
-                },
-                "ext": {
-                  "type": "string"
-                },
-                "mime": {
-                  "type": "string"
-                },
-                "size": {
-                  "type": "number"
-                },
-                "url": {
-                  "type": "string"
-                },
-                "previewUrl": {
-                  "type": "string"
-                },
-                "provider": {
-                  "type": "string"
-                },
-                "provider_metadata": {
-                  "type": "object"
-                },
-                "related": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "deskripsi_produk": {
-            "type": "string"
-          },
-          "harga": {
-            "type": "integer"
-          },
-          "vendor": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "nama_vendor": {
-                "type": "string"
-              },
-              "jenis_kelamin": {
-                "type": "string"
-              },
-              "NIK": {
-                "type": "integer"
-              },
-              "tempat_tanggal_lahir": {
-                "type": "string"
-              },
-              "alamat_lengkap": {
-                "type": "string"
-              },
-              "nama_bank": {
-                "type": "string"
-              },
-              "kota_kabupaten": {
-                "type": "string"
-              },
-              "nomor_hp": {
-                "type": "string"
-              },
-              "nama_rekening": {
-                "type": "string"
-              },
-              "kode_pos": {
-                "type": "integer"
-              },
-              "no_rekening": {
-                "type": "integer"
-              },
-              "deskripsi": {
-                "type": "string"
-              },
-              "foto_wajah": {
-                "type": "string"
-              },
-              "foto_ktp": {
-                "type": "string"
-              },
-              "foto_buku_tabungan": {
-                "type": "string"
-              },
-              "foto_toko": {
-                "type": "string"
-              },
-              "produks": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "user": {
-                "type": "string"
-              },
-              "foto_profil": {
-                "type": "string"
-              },
-              "comments": {
-                "type": "component"
-              },
-              "portfolios": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "location": {
-                "type": "string"
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
-          },
-          "category": {
-            "type": "string",
-            "enum": [
-              "Perlengkapan",
-              "Venue",
-              "Talent",
-              "Jasa",
-              "Catering",
-              "Dekorasi"
-            ]
-          },
-          "rating": {
-            "type": "number"
-          },
-          "penilaian": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "user": {
-                  "required": [
-                    "id",
-                    "username",
-                    "email"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "username": {
-                      "type": "string"
-                    },
-                    "email": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "password": {
-                      "type": "string"
-                    },
-                    "resetPasswordToken": {
-                      "type": "string"
-                    },
-                    "confirmationToken": {
-                      "type": "string"
-                    },
-                    "confirmed": {
-                      "type": "boolean"
-                    },
-                    "blocked": {
-                      "type": "boolean"
-                    },
-                    "role": {
-                      "type": "string"
-                    },
-                    "phone_number": {
-                      "type": "string"
-                    },
-                    "nama_lengkap": {
-                      "type": "string"
-                    },
-                    "vendor": {
-                      "type": "string"
-                    },
-                    "foto_profil": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                },
-                "rating": {
-                  "type": "number"
-                },
-                "komentar": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "isArchived": {
-            "type": "boolean"
-          },
-          "subcategory": {
-            "type": "string"
-          },
-          "tags": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "tag_name": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
           },
           "published_at": {
             "type": "string",
@@ -823,125 +531,10 @@
           }
         }
       },
-      "NewProduk": {
+      "NewTags": {
         "properties": {
-          "nama": {
+          "tag_name": {
             "type": "string"
-          },
-          "lokasi": {
-            "type": "string"
-          },
-          "deskripsi_produk": {
-            "type": "string"
-          },
-          "harga": {
-            "type": "integer"
-          },
-          "vendor": {
-            "type": "string"
-          },
-          "category": {
-            "type": "string",
-            "enum": [
-              "Perlengkapan",
-              "Venue",
-              "Talent",
-              "Jasa",
-              "Catering",
-              "Dekorasi"
-            ]
-          },
-          "rating": {
-            "type": "number"
-          },
-          "penilaian": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "user": {
-                  "required": [
-                    "id",
-                    "username",
-                    "email"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "username": {
-                      "type": "string"
-                    },
-                    "email": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "password": {
-                      "type": "string"
-                    },
-                    "resetPasswordToken": {
-                      "type": "string"
-                    },
-                    "confirmationToken": {
-                      "type": "string"
-                    },
-                    "confirmed": {
-                      "type": "boolean"
-                    },
-                    "blocked": {
-                      "type": "boolean"
-                    },
-                    "role": {
-                      "type": "string"
-                    },
-                    "phone_number": {
-                      "type": "string"
-                    },
-                    "nama_lengkap": {
-                      "type": "string"
-                    },
-                    "vendor": {
-                      "type": "string"
-                    },
-                    "foto_profil": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                },
-                "rating": {
-                  "type": "number"
-                },
-                "komentar": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "isArchived": {
-            "type": "boolean"
-          },
-          "subcategory": {
-            "type": "string"
-          },
-          "tags": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
           },
           "published_at": {
             "type": "string",
@@ -959,7 +552,7 @@
   },
   "tags": [
     {
-      "name": "Produk"
+      "name": "Tags"
     }
   ]
 }

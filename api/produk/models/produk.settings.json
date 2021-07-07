@@ -66,9 +66,7 @@
       "type": "string"
     },
     "tags": {
-      "type": "component",
-      "repeatable": true,
-      "component": "products.tags"
+      "collection": "tags"
     }
   }
 }
