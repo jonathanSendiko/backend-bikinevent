@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/07/2021 2:30:36 PM"
+    "x-generation-date": "07/08/2021 10:36:39 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6453,6 +6453,9 @@
               "foto_profil": {
                 "type": "string"
               },
+              "pembeli": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -6533,7 +6536,7 @@
               }
             }
           },
-          "carts": {
+          "cart": {
             "type": "array",
             "items": {
               "required": [
@@ -6543,14 +6546,55 @@
                 "id": {
                   "type": "string"
                 },
-                "konten_blog": {
+                "nama": {
                   "type": "string"
                 },
-                "media_artikel": {
+                "lokasi": {
                   "type": "string"
                 },
-                "judul_artikel": {
+                "foto_produk": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "deskripsi_produk": {
                   "type": "string"
+                },
+                "harga": {
+                  "type": "integer"
+                },
+                "vendor": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string",
+                  "enum": [
+                    "Perlengkapan",
+                    "Venue",
+                    "Talent",
+                    "Jasa",
+                    "Catering",
+                    "Dekorasi"
+                  ]
+                },
+                "rating": {
+                  "type": "number"
+                },
+                "penilaian": {
+                  "type": "component"
+                },
+                "isArchived": {
+                  "type": "boolean"
+                },
+                "subcategory": {
+                  "type": "string"
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -6671,7 +6715,7 @@
               "type": "string"
             }
           },
-          "carts": {
+          "cart": {
             "type": "array",
             "items": {
               "type": "string"
@@ -7165,6 +7209,9 @@
                     "foto_profil": {
                       "type": "string"
                     },
+                    "pembeli": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -7308,6 +7355,9 @@
                       "type": "string"
                     },
                     "foto_profil": {
+                      "type": "string"
+                    },
+                    "pembeli": {
                       "type": "string"
                     },
                     "created_by": {
@@ -7818,6 +7868,9 @@
               "foto_profil": {
                 "type": "string"
               },
+              "pembeli": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -7951,6 +8004,9 @@
                       "type": "string"
                     },
                     "foto_profil": {
+                      "type": "string"
+                    },
+                    "pembeli": {
                       "type": "string"
                     },
                     "created_by": {
@@ -8120,6 +8176,9 @@
                     "foto_profil": {
                       "type": "string"
                     },
+                    "pembeli": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -8267,6 +8326,9 @@
                   "type": "string"
                 },
                 "foto_profil": {
+                  "type": "string"
+                },
+                "pembeli": {
                   "type": "string"
                 },
                 "created_by": {
@@ -8545,6 +8607,46 @@
                 "type": "string"
               }
             }
+          },
+          "pembeli": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "user": {
+                "type": "string"
+              },
+              "order_histories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "cart": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "informasi_pembeli": {
+                "type": "component"
+              },
+              "foto_profil": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -8594,6 +8696,9 @@
             "type": "string"
           },
           "vendor": {
+            "type": "string"
+          },
+          "pembeli": {
             "type": "string"
           },
           "created_by": {

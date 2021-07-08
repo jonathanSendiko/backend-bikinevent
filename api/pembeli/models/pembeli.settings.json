@@ -14,13 +14,14 @@
   "attributes": {
     "user": {
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "pembeli"
     },
     "order_histories": {
       "collection": "produk"
     },
-    "carts": {
-      "collection": "blog"
+    "cart": {
+      "collection": "produk"
     },
     "informasi_pembeli": {
       "type": "component",

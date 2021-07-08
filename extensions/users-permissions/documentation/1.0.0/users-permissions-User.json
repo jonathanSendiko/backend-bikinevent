@@ -1414,6 +1414,46 @@
                 "type": "string"
               }
             }
+          },
+          "pembeli": {
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "user": {
+                "type": "string"
+              },
+              "order_histories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "cart": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "informasi_pembeli": {
+                "type": "component"
+              },
+              "foto_profil": {
+                "type": "string"
+              },
+              "published_at": {
+                "type": "string"
+              },
+              "created_by": {
+                "type": "string"
+              },
+              "updated_by": {
+                "type": "string"
+              }
+            }
           }
         }
       },
@@ -1463,6 +1503,9 @@
             "type": "string"
           },
           "vendor": {
+            "type": "string"
+          },
+          "pembeli": {
             "type": "string"
           },
           "created_by": {

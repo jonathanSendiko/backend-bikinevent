@@ -80,6 +80,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "pembeli": {
+      "via": "user",
+      "model": "pembeli"
     }
   }
 }

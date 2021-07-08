@@ -769,6 +769,9 @@
                     "foto_profil": {
                       "type": "string"
                     },
+                    "pembeli": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -912,6 +915,9 @@
                       "type": "string"
                     },
                     "foto_profil": {
+                      "type": "string"
+                    },
+                    "pembeli": {
                       "type": "string"
                     },
                     "created_by": {

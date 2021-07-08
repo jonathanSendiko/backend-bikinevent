@@ -571,6 +571,9 @@
               "foto_profil": {
                 "type": "string"
               },
+              "pembeli": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -651,7 +654,7 @@
               }
             }
           },
-          "carts": {
+          "cart": {
             "type": "array",
             "items": {
               "required": [
@@ -661,14 +664,55 @@
                 "id": {
                   "type": "string"
                 },
-                "konten_blog": {
+                "nama": {
                   "type": "string"
                 },
-                "media_artikel": {
+                "lokasi": {
                   "type": "string"
                 },
-                "judul_artikel": {
+                "foto_produk": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "deskripsi_produk": {
                   "type": "string"
+                },
+                "harga": {
+                  "type": "integer"
+                },
+                "vendor": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string",
+                  "enum": [
+                    "Perlengkapan",
+                    "Venue",
+                    "Talent",
+                    "Jasa",
+                    "Catering",
+                    "Dekorasi"
+                  ]
+                },
+                "rating": {
+                  "type": "number"
+                },
+                "penilaian": {
+                  "type": "component"
+                },
+                "isArchived": {
+                  "type": "boolean"
+                },
+                "subcategory": {
+                  "type": "string"
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "published_at": {
                   "type": "string"
@@ -789,7 +833,7 @@
               "type": "string"
             }
           },
-          "carts": {
+          "cart": {
             "type": "array",
             "items": {
               "type": "string"
