@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "payment_methods",
+  "info": {
+    "name": "payment_method",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bank": {
+      "type": "component",
+      "repeatable": true,
+      "component": "user-related.bank"
+    },
+    "ewallet": {
+      "type": "component",
+      "repeatable": true,
+      "component": "user-related.bank"
+    }
+  }
+}

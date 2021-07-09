@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_histories",
+  "info": {
+    "name": "order_history",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "produk": {
+      "model": "produk"
+    },
+    "note": {
+      "type": "string"
+    },
+    "pembeli": {
+      "via": "order_histories",
+      "model": "pembeli"
+    },
+    "rating": {
+      "type": "float"
+    },
+    "informasi_pembeli": {
+      "type": "component",
+      "repeatable": false,
+      "component": "user-related.informasi-pembeli"
+    },
+    "metode_pembayaran": {
+      "type": "string"
+    },
+    "sistem_dp": {
+      "type": "boolean",
+      "default": false
+    },
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Pending",
+        "Confirmed",
+        "Completed"
+      ]
+    }
+  }
+}

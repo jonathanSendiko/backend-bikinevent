@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/payment-method",
+      "handler": "payment-method.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/payment-method",
+      "handler": "payment-method.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/payment-method",
+      "handler": "payment-method.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

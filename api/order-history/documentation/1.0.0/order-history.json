@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/pembelis": {
+    "/order-histories": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10,9 +10,10 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/Pembeli"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
                   }
                 }
               }
@@ -51,7 +52,7 @@
         },
         "summary": "",
         "tags": [
-          "Pembeli"
+          "Order-history"
         ],
         "parameters": [
           {
@@ -201,72 +202,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pembeli"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Forbidden",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          },
-          "default": {
-            "description": "unexpected error",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/Error"
-                }
-              }
-            }
-          }
-        },
-        "summary": "",
-        "tags": [
-          "Pembeli"
-        ],
-        "requestBody": {
-          "description": "",
-          "required": true,
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/NewPembeli"
-              }
-            }
-          }
-        }
-      }
-    },
-    "/pembelis/count": {
-      "get": {
-        "deprecated": false,
-        "description": "",
-        "responses": {
-          "200": {
-            "description": "response",
-            "content": {
-              "application/json": {
-                "schema": {
                   "properties": {
-                    "count": {
-                      "type": "integer"
+                    "foo": {
+                      "type": "string"
                     }
                   }
                 }
@@ -306,12 +244,22 @@
         },
         "summary": "",
         "tags": [
-          "Pembeli"
+          "Order-history"
         ],
-        "parameters": []
+        "requestBody": {
+          "description": "",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NewOrder-history"
+              }
+            }
+          }
+        }
       }
     },
-    "/pembelis/{id}": {
+    "/order-histories/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -321,7 +269,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pembeli"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -359,7 +311,64 @@
         },
         "summary": "",
         "tags": [
-          "Pembeli"
+          "Order-history"
+        ],
+        "parameters": []
+      }
+    },
+    "/order-histories/{id}": {
+      "get": {
+        "deprecated": false,
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "403": {
+            "description": "Forbidden",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not found",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          },
+          "default": {
+            "description": "unexpected error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Error"
+                }
+              }
+            }
+          }
+        },
+        "summary": "",
+        "tags": [
+          "Order-history"
         ],
         "parameters": [
           {
@@ -383,7 +392,11 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pembeli"
+                  "properties": {
+                    "foo": {
+                      "type": "string"
+                    }
+                  }
                 }
               }
             }
@@ -421,7 +434,7 @@
         },
         "summary": "",
         "tags": [
-          "Pembeli"
+          "Order-history"
         ],
         "requestBody": {
           "description": "",
@@ -429,7 +442,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewPembeli"
+                "$ref": "#/components/schemas/NewOrder-history"
               }
             }
           }
@@ -495,7 +508,7 @@
         },
         "summary": "",
         "tags": [
-          "Pembeli"
+          "Order-history"
         ],
         "parameters": [
           {
@@ -514,7 +527,7 @@
   },
   "components": {
     "schemas": {
-      "Pembeli": {
+      "Order-history": {
         "required": [
           "id"
         ],
@@ -522,56 +535,65 @@
           "id": {
             "type": "string"
           },
-          "user": {
+          "produk": {
             "required": [
-              "id",
-              "username",
-              "email"
+              "id"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "username": {
+              "nama": {
                 "type": "string"
               },
-              "email": {
+              "lokasi": {
                 "type": "string"
               },
-              "provider": {
+              "foto_produk": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "deskripsi_produk": {
                 "type": "string"
               },
-              "password": {
-                "type": "string"
-              },
-              "resetPasswordToken": {
-                "type": "string"
-              },
-              "confirmationToken": {
-                "type": "string"
-              },
-              "confirmed": {
-                "type": "boolean"
-              },
-              "blocked": {
-                "type": "boolean"
-              },
-              "role": {
-                "type": "string"
-              },
-              "phone_number": {
-                "type": "string"
-              },
-              "nama_lengkap": {
-                "type": "string"
+              "harga": {
+                "type": "integer"
               },
               "vendor": {
                 "type": "string"
               },
-              "foto_profil": {
+              "category": {
+                "type": "string",
+                "enum": [
+                  "Perlengkapan",
+                  "Venue",
+                  "Talent",
+                  "Jasa",
+                  "Catering",
+                  "Dekorasi"
+                ]
+              },
+              "rating": {
+                "type": "number"
+              },
+              "penilaian": {
+                "type": "component"
+              },
+              "isArchived": {
+                "type": "boolean"
+              },
+              "subcategory": {
                 "type": "string"
               },
-              "pembeli": {
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "published_at": {
                 "type": "string"
               },
               "created_by": {
@@ -582,158 +604,39 @@
               }
             }
           },
-          "cart": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nama": {
-                  "type": "string"
-                },
-                "lokasi": {
-                  "type": "string"
-                },
-                "foto_produk": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "deskripsi_produk": {
-                  "type": "string"
-                },
-                "harga": {
-                  "type": "integer"
-                },
-                "vendor": {
-                  "type": "string"
-                },
-                "category": {
-                  "type": "string",
-                  "enum": [
-                    "Perlengkapan",
-                    "Venue",
-                    "Talent",
-                    "Jasa",
-                    "Catering",
-                    "Dekorasi"
-                  ]
-                },
-                "rating": {
-                  "type": "number"
-                },
-                "penilaian": {
-                  "type": "component"
-                },
-                "isArchived": {
-                  "type": "boolean"
-                },
-                "subcategory": {
-                  "type": "string"
-                },
-                "tags": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
-              }
-            }
+          "note": {
+            "type": "string"
           },
-          "informasi_pembeli": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nama_pembeli": {
-                  "type": "string"
-                },
-                "no_hp_pembeli": {
-                  "type": "string"
-                },
-                "alamat_pembeli": {
-                  "type": "string"
-                }
-              }
-            }
-          },
-          "foto_profil": {
+          "pembeli": {
             "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
+              "id"
             ],
             "properties": {
               "id": {
                 "type": "string"
               },
-              "name": {
+              "user": {
                 "type": "string"
               },
-              "alternativeText": {
+              "cart": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "informasi_pembeli": {
+                "type": "component"
+              },
+              "foto_profil": {
                 "type": "string"
               },
-              "caption": {
-                "type": "string"
+              "order_histories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
-              "width": {
-                "type": "integer"
-              },
-              "height": {
-                "type": "integer"
-              },
-              "formats": {
-                "type": "object"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "previewUrl": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
+              "published_at": {
                 "type": "string"
               },
               "created_by": {
@@ -744,56 +647,43 @@
               }
             }
           },
-          "order_histories": {
-            "type": "array",
-            "items": {
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "produk": {
-                  "type": "string"
-                },
-                "note": {
-                  "type": "string"
-                },
-                "pembeli": {
-                  "type": "string"
-                },
-                "rating": {
-                  "type": "number"
-                },
-                "informasi_pembeli": {
-                  "type": "component"
-                },
-                "metode_pembayaran": {
-                  "type": "string"
-                },
-                "sistem_dp": {
-                  "type": "boolean"
-                },
-                "Status": {
-                  "type": "string",
-                  "enum": [
-                    "Pending",
-                    "Confirmed",
-                    "Completed"
-                  ]
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
-                  "type": "string"
-                }
+          "rating": {
+            "type": "number"
+          },
+          "informasi_pembeli": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "nama_pembeli": {
+                "type": "string"
+              },
+              "no_hp_pembeli": {
+                "type": "string"
+              },
+              "alamat_pembeli": {
+                "type": "string"
               }
             }
+          },
+          "metode_pembayaran": {
+            "type": "string"
+          },
+          "sistem_dp": {
+            "type": "boolean",
+            "default": false
+          },
+          "Status": {
+            "type": "string",
+            "enum": [
+              "Pending",
+              "Confirmed",
+              "Completed"
+            ]
           },
           "published_at": {
             "type": "string",
@@ -801,45 +691,54 @@
           }
         }
       },
-      "NewPembeli": {
+      "NewOrder-history": {
         "properties": {
-          "user": {
+          "produk": {
             "type": "string"
           },
-          "cart": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "note": {
+            "type": "string"
+          },
+          "pembeli": {
+            "type": "string"
+          },
+          "rating": {
+            "type": "number"
           },
           "informasi_pembeli": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nama_pembeli": {
-                  "type": "string"
-                },
-                "no_hp_pembeli": {
-                  "type": "string"
-                },
-                "alamat_pembeli": {
-                  "type": "string"
-                }
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "nama_pembeli": {
+                "type": "string"
+              },
+              "no_hp_pembeli": {
+                "type": "string"
+              },
+              "alamat_pembeli": {
+                "type": "string"
               }
             }
           },
-          "order_histories": {
-            "type": "array",
-            "items": {
-              "type": "string"
-            }
+          "metode_pembayaran": {
+            "type": "string"
+          },
+          "sistem_dp": {
+            "type": "boolean",
+            "default": false
+          },
+          "Status": {
+            "type": "string",
+            "enum": [
+              "Pending",
+              "Confirmed",
+              "Completed"
+            ]
           },
           "published_at": {
             "type": "string",
@@ -855,9 +754,5 @@
       }
     }
   },
-  "tags": [
-    {
-      "name": "Pembeli"
-    }
-  ]
+  "tags": []
 }

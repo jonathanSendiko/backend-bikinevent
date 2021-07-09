@@ -17,9 +17,6 @@
       "model": "user",
       "via": "pembeli"
     },
-    "order_histories": {
-      "collection": "produk"
-    },
     "cart": {
       "collection": "produk"
     },
@@ -39,6 +36,10 @@
       "plugin": "upload",
       "required": false,
       "pluginOptions": {}
+    },
+    "order_histories": {
+      "via": "pembeli",
+      "collection": "order-history"
     }
   }
 }
