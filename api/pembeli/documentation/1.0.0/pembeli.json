@@ -754,11 +754,11 @@
                 "id": {
                   "type": "string"
                 },
-                "produk": {
-                  "type": "string"
-                },
-                "note": {
-                  "type": "string"
+                "produks": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "pembeli": {
                   "type": "string"
@@ -775,13 +775,19 @@
                 "sistem_dp": {
                   "type": "boolean"
                 },
-                "Status": {
+                "status": {
                   "type": "string",
                   "enum": [
                     "Pending",
-                    "Confirmed",
+                    "Paid",
                     "Completed"
                   ]
+                },
+                "total_price": {
+                  "type": "integer"
+                },
+                "notes": {
+                  "type": "component"
                 },
                 "published_at": {
                   "type": "string"

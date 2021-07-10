@@ -16,6 +16,13 @@ module.exports = {
           path: "vendor",
         },
       },
+      {
+        path: "order_histories",
+        populate: {
+          path: "produks",
+          populate: "vendor",
+        },
+      },
     ]);
     return sanitizeEntity(entity, { model: strapi.models.pembeli });
   },

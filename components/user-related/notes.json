@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_user_related_notes",
+  "info": {
+    "name": "notes",
+    "icon": "arrow-alt-circle-left"
+  },
+  "options": {},
+  "attributes": {
+    "note_content": {
+      "type": "string"
+    }
+  }
+}

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/10/2021 2:02:52 AM"
+    "x-generation-date": "07/10/2021 2:33:27 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -7240,77 +7240,77 @@
           "id": {
             "type": "string"
           },
-          "produk": {
-            "required": [
-              "id"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "nama": {
-                "type": "string"
-              },
-              "lokasi": {
-                "type": "string"
-              },
-              "foto_produk": {
-                "type": "array",
-                "items": {
+          "produks": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "nama": {
+                  "type": "string"
+                },
+                "lokasi": {
+                  "type": "string"
+                },
+                "foto_produk": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "deskripsi_produk": {
+                  "type": "string"
+                },
+                "harga": {
+                  "type": "integer"
+                },
+                "vendor": {
+                  "type": "string"
+                },
+                "category": {
+                  "type": "string",
+                  "enum": [
+                    "Perlengkapan",
+                    "Venue",
+                    "Talent",
+                    "Jasa",
+                    "Catering",
+                    "Dekorasi"
+                  ]
+                },
+                "rating": {
+                  "type": "number"
+                },
+                "penilaian": {
+                  "type": "component"
+                },
+                "isArchived": {
+                  "type": "boolean"
+                },
+                "subcategory": {
+                  "type": "string"
+                },
+                "tags": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
                   "type": "string"
                 }
-              },
-              "deskripsi_produk": {
-                "type": "string"
-              },
-              "harga": {
-                "type": "integer"
-              },
-              "vendor": {
-                "type": "string"
-              },
-              "category": {
-                "type": "string",
-                "enum": [
-                  "Perlengkapan",
-                  "Venue",
-                  "Talent",
-                  "Jasa",
-                  "Catering",
-                  "Dekorasi"
-                ]
-              },
-              "rating": {
-                "type": "number"
-              },
-              "penilaian": {
-                "type": "component"
-              },
-              "isArchived": {
-                "type": "boolean"
-              },
-              "subcategory": {
-                "type": "string"
-              },
-              "tags": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
-              "published_at": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
               }
             }
-          },
-          "note": {
-            "type": "string"
           },
           "pembeli": {
             "required": [
@@ -7382,13 +7382,33 @@
             "type": "boolean",
             "default": false
           },
-          "Status": {
+          "status": {
             "type": "string",
             "enum": [
               "Pending",
-              "Confirmed",
+              "Paid",
               "Completed"
             ]
+          },
+          "total_price": {
+            "type": "integer"
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "note_content": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -7398,11 +7418,11 @@
       },
       "NewOrder-history": {
         "properties": {
-          "produk": {
-            "type": "string"
-          },
-          "note": {
-            "type": "string"
+          "produks": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "pembeli": {
             "type": "string"
@@ -7437,13 +7457,33 @@
             "type": "boolean",
             "default": false
           },
-          "Status": {
+          "status": {
             "type": "string",
             "enum": [
               "Pending",
-              "Confirmed",
+              "Paid",
               "Completed"
             ]
+          },
+          "total_price": {
+            "type": "integer"
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "note_content": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -8085,11 +8125,11 @@
                 "id": {
                   "type": "string"
                 },
-                "produk": {
-                  "type": "string"
-                },
-                "note": {
-                  "type": "string"
+                "produks": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
                 },
                 "pembeli": {
                   "type": "string"
@@ -8106,13 +8146,19 @@
                 "sistem_dp": {
                   "type": "boolean"
                 },
-                "Status": {
+                "status": {
                   "type": "string",
                   "enum": [
                     "Pending",
-                    "Confirmed",
+                    "Paid",
                     "Completed"
                   ]
+                },
+                "total_price": {
+                  "type": "integer"
+                },
+                "notes": {
+                  "type": "component"
                 },
                 "published_at": {
                   "type": "string"

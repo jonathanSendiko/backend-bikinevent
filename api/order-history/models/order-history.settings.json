@@ -12,11 +12,8 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "produk": {
-      "model": "produk"
-    },
-    "note": {
-      "type": "string"
+    "produks": {
+      "collection": "produk"
     },
     "pembeli": {
       "via": "order_histories",
@@ -37,13 +34,21 @@
       "type": "boolean",
       "default": false
     },
-    "Status": {
+    "status": {
       "type": "enumeration",
       "enum": [
         "Pending",
-        "Confirmed",
+        "Paid",
         "Completed"
       ]
+    },
+    "total_price": {
+      "type": "integer"
+    },
+    "notes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "user-related.notes"
     }
   }
 }
