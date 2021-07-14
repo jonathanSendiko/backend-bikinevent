@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_admin_related_tentang_kamis",
+  "info": {
+    "name": "tentang-kami",
+    "icon": "align-justify"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

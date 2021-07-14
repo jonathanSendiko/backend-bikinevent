@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "name": "footer"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "link_facebook": {
+      "type": "string"
+    },
+    "link_instagram": {
+      "type": "string"
+    },
+    "link_youtube": {
+      "type": "string"
+    },
+    "link_linkedIn": {
+      "type": "string"
+    },
+    "contact_number": {
+      "type": "string"
+    },
+    "contact_email": {
+      "type": "string"
+    }
+  }
+}

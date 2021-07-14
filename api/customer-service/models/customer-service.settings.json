@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "customer_services",
+  "info": {
+    "name": "customer_service"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FAQ": {
+      "type": "component",
+      "repeatable": true,
+      "component": "admin-related.faq"
+    },
+    "tentang_kami": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin-related.tentang-kami"
+    },
+    "panduan_pemesanan": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin-related.tentang-kami"
+    },
+    "syarat_ketentuan": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin-related.tentang-kami"
+    },
+    "kebijakan_privasi": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin-related.tentang-kami"
+    },
+    "kebijakan_Refund": {
+      "type": "component",
+      "repeatable": false,
+      "component": "admin-related.tentang-kami"
+    }
+  }
+}

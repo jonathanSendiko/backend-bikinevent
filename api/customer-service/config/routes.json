@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/customer-service",
+      "handler": "customer-service.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/customer-service",
+      "handler": "customer-service.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/customer-service",
+      "handler": "customer-service.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
