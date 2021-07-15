@@ -65,8 +65,10 @@
     "subcategory": {
       "type": "string"
     },
-    "tags": {
-      "collection": "tags"
+    "tag": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.tag"
     }
   }
 }

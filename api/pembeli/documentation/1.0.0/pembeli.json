@@ -636,11 +636,8 @@
                 "subcategory": {
                   "type": "string"
                 },
-                "tags": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "tag": {
+                  "type": "component"
                 },
                 "published_at": {
                   "type": "string"
@@ -796,7 +793,7 @@
                   }
                 },
                 "kode_invoice": {
-                  "type": "uid"
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"

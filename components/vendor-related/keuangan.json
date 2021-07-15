@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_vendor_related_keuangans",
+  "info": {
+    "name": "keuangan",
+    "icon": "ambulance",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "saldo_penjual": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "akan_dilepas": {
+      "type": "biginteger",
+      "default": "0"
+    },
+    "sudah_dilepas": {
+      "type": "biginteger",
+      "default": "0"
+    }
+  }
+}

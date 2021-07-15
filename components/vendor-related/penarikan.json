@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_vendor_related_penarikans",
+  "info": {
+    "name": "penarikan",
+    "icon": "angle-double-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nama_bank": {
+      "type": "string"
+    },
+    "no_rekening": {
+      "type": "biginteger"
+    },
+    "pemilik_rekening": {
+      "type": "string"
+    },
+    "jumlah": {
+      "type": "biginteger"
+    },
+    "tanggal_penarikan": {
+      "type": "date"
+    }
+  }
+}

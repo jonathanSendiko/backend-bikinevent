@@ -690,6 +690,12 @@
                   "type": "string"
                 }
               },
+              "keuangan": {
+                "type": "component"
+              },
+              "penarikan": {
+                "type": "component"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -801,9 +807,10 @@
           "subcategory": {
             "type": "string"
           },
-          "tags": {
+          "tag": {
             "type": "array",
             "items": {
+              "type": "object",
               "required": [
                 "id"
               ],
@@ -812,15 +819,6 @@
                   "type": "string"
                 },
                 "tag_name": {
-                  "type": "string"
-                },
-                "published_at": {
-                  "type": "string"
-                },
-                "created_by": {
-                  "type": "string"
-                },
-                "updated_by": {
                   "type": "string"
                 }
               }
@@ -949,10 +947,21 @@
           "subcategory": {
             "type": "string"
           },
-          "tags": {
+          "tag": {
             "type": "array",
             "items": {
-              "type": "string"
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "tag_name": {
+                  "type": "string"
+                }
+              }
             }
           },
           "published_at": {

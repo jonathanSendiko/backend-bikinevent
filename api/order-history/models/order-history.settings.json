@@ -51,12 +51,12 @@
       "component": "user-related.notes"
     },
     "vendors": {
-      "collection": "vendor",
       "via": "order_histories",
+      "collection": "vendor",
       "dominant": true
     },
     "kode_invoice": {
-      "type": "uid"
+      "type": "string"
     }
   }
 }

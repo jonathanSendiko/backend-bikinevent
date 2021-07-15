@@ -451,11 +451,8 @@
                     "subcategory": {
                       "type": "string"
                     },
-                    "tags": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
+                    "tag": {
+                      "type": "component"
                     },
                     "published_at": {
                       "type": "string"
@@ -547,11 +544,8 @@
                       "subcategory": {
                         "type": "string"
                       },
-                      "tags": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
+                      "tag": {
+                        "type": "component"
                       },
                       "published_at": {
                         "type": "string"
@@ -731,11 +725,8 @@
                     "subcategory": {
                       "type": "string"
                     },
-                    "tags": {
-                      "type": "array",
-                      "items": {
-                        "type": "string"
-                      }
+                    "tag": {
+                      "type": "component"
                     },
                     "published_at": {
                       "type": "string"
@@ -827,11 +818,8 @@
                       "subcategory": {
                         "type": "string"
                       },
-                      "tags": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
+                      "tag": {
+                        "type": "component"
                       },
                       "published_at": {
                         "type": "string"

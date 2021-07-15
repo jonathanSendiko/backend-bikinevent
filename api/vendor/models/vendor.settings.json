@@ -132,6 +132,16 @@
     "order_histories": {
       "via": "vendors",
       "collection": "order-history"
+    },
+    "keuangan": {
+      "type": "component",
+      "repeatable": false,
+      "component": "vendor-related.keuangan"
+    },
+    "penarikan": {
+      "type": "component",
+      "repeatable": true,
+      "component": "vendor-related.penarikan"
     }
   }
 }

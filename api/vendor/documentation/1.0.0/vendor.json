@@ -880,11 +880,8 @@
                 "subcategory": {
                   "type": "string"
                 },
-                "tags": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                "tag": {
+                  "type": "component"
                 },
                 "published_at": {
                   "type": "string"
@@ -1194,7 +1191,7 @@
                   }
                 },
                 "kode_invoice": {
-                  "type": "uid"
+                  "type": "string"
                 },
                 "published_at": {
                   "type": "string"
@@ -1204,6 +1201,59 @@
                 },
                 "updated_by": {
                   "type": "string"
+                }
+              }
+            }
+          },
+          "keuangan": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "saldo_penjual": {
+                "type": "integer",
+                "default": "0"
+              },
+              "akan_dilepas": {
+                "type": "integer",
+                "default": "0"
+              },
+              "sudah_dilepas": {
+                "type": "integer",
+                "default": "0"
+              }
+            }
+          },
+          "penarikan": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "nama_bank": {
+                  "type": "string"
+                },
+                "no_rekening": {
+                  "type": "integer"
+                },
+                "pemilik_rekening": {
+                  "type": "string"
+                },
+                "jumlah": {
+                  "type": "integer"
+                },
+                "tanggal_penarikan": {
+                  "type": "string",
+                  "format": "date"
                 }
               }
             }
@@ -1354,6 +1404,59 @@
             "type": "array",
             "items": {
               "type": "string"
+            }
+          },
+          "keuangan": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "saldo_penjual": {
+                "type": "integer",
+                "default": "0"
+              },
+              "akan_dilepas": {
+                "type": "integer",
+                "default": "0"
+              },
+              "sudah_dilepas": {
+                "type": "integer",
+                "default": "0"
+              }
+            }
+          },
+          "penarikan": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "nama_bank": {
+                  "type": "string"
+                },
+                "no_rekening": {
+                  "type": "integer"
+                },
+                "pemilik_rekening": {
+                  "type": "string"
+                },
+                "jumlah": {
+                  "type": "integer"
+                },
+                "tanggal_penarikan": {
+                  "type": "string",
+                  "format": "date"
+                }
+              }
             }
           },
           "published_at": {

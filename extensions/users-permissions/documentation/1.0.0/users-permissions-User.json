@@ -1343,6 +1343,12 @@
                   "type": "string"
                 }
               },
+              "keuangan": {
+                "type": "component"
+              },
+              "penarikan": {
+                "type": "component"
+              },
               "published_at": {
                 "type": "string"
               },
