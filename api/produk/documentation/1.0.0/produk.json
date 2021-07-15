@@ -684,6 +684,12 @@
               "location": {
                 "type": "string"
               },
+              "order_histories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },

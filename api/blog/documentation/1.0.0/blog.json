@@ -595,6 +595,9 @@
           "judul_artikel": {
             "type": "string"
           },
+          "uid": {
+            "type": "uid"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -608,6 +611,9 @@
           },
           "judul_artikel": {
             "type": "string"
+          },
+          "uid": {
+            "type": "uid"
           },
           "published_at": {
             "type": "string",

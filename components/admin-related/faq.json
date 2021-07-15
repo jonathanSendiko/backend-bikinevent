@@ -2,14 +2,15 @@
   "collectionName": "components_admin_related_faqs",
   "info": {
     "name": "FAQ",
-    "icon": "align-center"
+    "icon": "align-center",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "question": {
+    "title": {
       "type": "string"
     },
-    "answer": {
+    "desc": {
       "type": "richtext"
     }
   }

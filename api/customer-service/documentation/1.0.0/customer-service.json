@@ -334,10 +334,10 @@
                 "id": {
                   "type": "string"
                 },
-                "question": {
+                "title": {
                   "type": "string"
                 },
-                "answer": {
+                "desc": {
                   "type": "string"
                 }
               }
@@ -352,7 +352,10 @@
               "id": {
                 "type": "string"
               },
-              "content": {
+              "desc": {
+                "type": "string"
+              },
+              "title": {
                 "type": "string"
               }
             }
@@ -366,7 +369,10 @@
               "id": {
                 "type": "string"
               },
-              "content": {
+              "desc": {
+                "type": "string"
+              },
+              "title": {
                 "type": "string"
               }
             }
@@ -380,7 +386,10 @@
               "id": {
                 "type": "string"
               },
-              "content": {
+              "desc": {
+                "type": "string"
+              },
+              "title": {
                 "type": "string"
               }
             }
@@ -394,7 +403,10 @@
               "id": {
                 "type": "string"
               },
-              "content": {
+              "desc": {
+                "type": "string"
+              },
+              "title": {
                 "type": "string"
               }
             }
@@ -408,7 +420,10 @@
               "id": {
                 "type": "string"
               },
-              "content": {
+              "desc": {
+                "type": "string"
+              },
+              "title": {
                 "type": "string"
               }
             }
@@ -432,10 +447,10 @@
                 "id": {
                   "type": "string"
                 },
-                "question": {
+                "title": {
                   "type": "string"
                 },
-                "answer": {
+                "desc": {
                   "type": "string"
                 }
               }
@@ -450,7 +465,10 @@
               "id": {
                 "type": "string"
               },
-              "content": {
+              "desc": {
+                "type": "string"
+              },
+              "title": {
                 "type": "string"
               }
             }
@@ -464,7 +482,10 @@
               "id": {
                 "type": "string"
               },
-              "content": {
+              "desc": {
+                "type": "string"
+              },
+              "title": {
                 "type": "string"
               }
             }
@@ -478,7 +499,10 @@
               "id": {
                 "type": "string"
               },
-              "content": {
+              "desc": {
+                "type": "string"
+              },
+              "title": {
                 "type": "string"
               }
             }
@@ -492,7 +516,10 @@
               "id": {
                 "type": "string"
               },
-              "content": {
+              "desc": {
+                "type": "string"
+              },
+              "title": {
                 "type": "string"
               }
             }
@@ -506,7 +533,10 @@
               "id": {
                 "type": "string"
               },
-              "content": {
+              "desc": {
+                "type": "string"
+              },
+              "title": {
                 "type": "string"
               }
             }

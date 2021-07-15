@@ -2,12 +2,16 @@
   "collectionName": "components_admin_related_tentang_kamis",
   "info": {
     "name": "tentang-kami",
-    "icon": "align-justify"
+    "icon": "align-justify",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "content": {
+    "desc": {
       "type": "richtext"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }

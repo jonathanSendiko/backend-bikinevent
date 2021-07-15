@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "customer_services",
   "info": {
-    "name": "customer_service"
+    "name": "customer_service",
+    "description": ""
   },
   "options": {
     "increments": true,

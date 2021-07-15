@@ -789,6 +789,15 @@
                 "notes": {
                   "type": "component"
                 },
+                "vendors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "kode_invoice": {
+                  "type": "uid"
+                },
                 "published_at": {
                   "type": "string"
                 },

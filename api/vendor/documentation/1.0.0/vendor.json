@@ -1142,6 +1142,72 @@
           "location": {
             "type": "string"
           },
+          "order_histories": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "produks": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "pembeli": {
+                  "type": "string"
+                },
+                "rating": {
+                  "type": "number"
+                },
+                "informasi_pembeli": {
+                  "type": "component"
+                },
+                "metode_pembayaran": {
+                  "type": "string"
+                },
+                "sistem_dp": {
+                  "type": "boolean"
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "Pending",
+                    "Paid",
+                    "Completed"
+                  ]
+                },
+                "total_price": {
+                  "type": "integer"
+                },
+                "notes": {
+                  "type": "component"
+                },
+                "vendors": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "kode_invoice": {
+                  "type": "uid"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -1283,6 +1349,12 @@
           },
           "location": {
             "type": "string"
+          },
+          "order_histories": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

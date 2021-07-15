@@ -29,6 +29,10 @@
     },
     "judul_artikel": {
       "type": "string"
+    },
+    "uid": {
+      "type": "uid",
+      "targetField": "judul_artikel"
     }
   }
 }

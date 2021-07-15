@@ -705,6 +705,109 @@
               }
             }
           },
+          "vendors": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "nama_vendor": {
+                  "type": "string"
+                },
+                "jenis_kelamin": {
+                  "type": "string"
+                },
+                "NIK": {
+                  "type": "integer"
+                },
+                "tempat_tanggal_lahir": {
+                  "type": "string"
+                },
+                "alamat_lengkap": {
+                  "type": "string"
+                },
+                "nama_bank": {
+                  "type": "string"
+                },
+                "kota_kabupaten": {
+                  "type": "string"
+                },
+                "nomor_hp": {
+                  "type": "string"
+                },
+                "nama_rekening": {
+                  "type": "string"
+                },
+                "kode_pos": {
+                  "type": "integer"
+                },
+                "no_rekening": {
+                  "type": "integer"
+                },
+                "deskripsi": {
+                  "type": "string"
+                },
+                "foto_wajah": {
+                  "type": "string"
+                },
+                "foto_ktp": {
+                  "type": "string"
+                },
+                "foto_buku_tabungan": {
+                  "type": "string"
+                },
+                "foto_toko": {
+                  "type": "string"
+                },
+                "produks": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "user": {
+                  "type": "string"
+                },
+                "foto_profil": {
+                  "type": "string"
+                },
+                "comments": {
+                  "type": "component"
+                },
+                "portfolios": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "location": {
+                  "type": "string"
+                },
+                "order_histories": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "kode_invoice": {
+            "type": "uid"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -779,6 +882,15 @@
                 }
               }
             }
+          },
+          "vendors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "kode_invoice": {
+            "type": "uid"
           },
           "published_at": {
             "type": "string",

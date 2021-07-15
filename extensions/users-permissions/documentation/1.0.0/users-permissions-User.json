@@ -1337,6 +1337,12 @@
               "location": {
                 "type": "string"
               },
+              "order_histories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "published_at": {
                 "type": "string"
               },
@@ -1426,12 +1432,6 @@
               "user": {
                 "type": "string"
               },
-              "order_histories": {
-                "type": "array",
-                "items": {
-                  "type": "string"
-                }
-              },
               "cart": {
                 "type": "array",
                 "items": {
@@ -1443,6 +1443,12 @@
               },
               "foto_profil": {
                 "type": "string"
+              },
+              "order_histories": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"
