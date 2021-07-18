@@ -947,6 +947,9 @@
               "pembeli": {
                 "type": "string"
               },
+              "tes": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -1085,6 +1088,9 @@
                     "pembeli": {
                       "type": "string"
                     },
+                    "tes": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -1193,6 +1199,9 @@
                 "kode_invoice": {
                   "type": "string"
                 },
+                "link_invoice": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -1257,6 +1266,10 @@
                 }
               }
             }
+          },
+          "verified": {
+            "type": "boolean",
+            "default": false
           },
           "published_at": {
             "type": "string",
@@ -1374,6 +1387,9 @@
                     "pembeli": {
                       "type": "string"
                     },
+                    "tes": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -1458,6 +1474,10 @@
                 }
               }
             }
+          },
+          "verified": {
+            "type": "boolean",
+            "default": false
           },
           "published_at": {
             "type": "string",

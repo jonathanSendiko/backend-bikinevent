@@ -11,7 +11,7 @@ module.exports = {
 
     const entity = await strapi.services.vendor.findOne({ id }, [
       {
-        path: "order_histories",
+        path: "order_histories user",
         populate: {
           path: "produks pembeli",
           populate: {

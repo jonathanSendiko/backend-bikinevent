@@ -336,6 +336,9 @@
           "contact_email": {
             "type": "string"
           },
+          "alamat": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -360,6 +363,9 @@
             "type": "string"
           },
           "contact_email": {
+            "type": "string"
+          },
+          "alamat": {
             "type": "string"
           },
           "published_at": {

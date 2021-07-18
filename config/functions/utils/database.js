@@ -6,13 +6,13 @@ async function findUser(username, room) {
     console.log("error while fetching", err);
   }
 }
-async function createUser({ username, room, status, socketId }) {
+async function createUser({ username, room, status, socketid }) {
   try {
     const user = await strapi.services.users.create({
       username,
       room,
       status: status,
-      socketId,
+      socketid,
     });
     return user;
   } catch (err) {
@@ -37,9 +37,9 @@ async function getUsersInRoom(room) {
   }
 }
 
-async function deleteUser(socketId) {
+async function deleteUser(socketid) {
   try {
-    const user = await strapi.services.users.delete({ socketId: socketId });
+    const user = await strapi.services.users.delete({ socketid: socketid });
     return user;
   } catch (err) {
     console.log("Error while deleting the User", err);

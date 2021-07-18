@@ -687,6 +687,9 @@
               "penarikan": {
                 "type": "component"
               },
+              "verified": {
+                "type": "boolean"
+              },
               "published_at": {
                 "type": "string"
               },

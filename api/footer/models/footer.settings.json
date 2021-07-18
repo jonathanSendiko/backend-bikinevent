@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "footers",
   "info": {
-    "name": "footer"
+    "name": "footer",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -28,6 +29,9 @@
     },
     "contact_email": {
       "type": "string"
+    },
+    "alamat": {
+      "type": "text"
     }
   }
 }

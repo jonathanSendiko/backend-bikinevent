@@ -1349,6 +1349,9 @@
               "penarikan": {
                 "type": "component"
               },
+              "verified": {
+                "type": "boolean"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -1466,6 +1469,9 @@
                 "type": "string"
               }
             }
+          },
+          "tes": {
+            "type": "string"
           }
         }
       },
@@ -1518,6 +1524,9 @@
             "type": "string"
           },
           "pembeli": {
+            "type": "string"
+          },
+          "tes": {
             "type": "string"
           },
           "created_by": {

@@ -73,9 +73,7 @@
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images",
-        "files",
-        "videos"
+        "images"
       ],
       "plugin": "upload",
       "required": false,
@@ -84,6 +82,9 @@
     "pembeli": {
       "via": "user",
       "model": "pembeli"
+    },
+    "tes": {
+      "type": "string"
     }
   }
 }

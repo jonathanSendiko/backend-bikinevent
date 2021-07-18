@@ -57,6 +57,9 @@
     },
     "kode_invoice": {
       "type": "string"
+    },
+    "link_invoice": {
+      "type": "string"
     }
   }
 }

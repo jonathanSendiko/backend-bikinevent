@@ -574,6 +574,9 @@
               "pembeli": {
                 "type": "string"
               },
+              "tes": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -793,6 +796,9 @@
                   }
                 },
                 "kode_invoice": {
+                  "type": "string"
+                },
+                "link_invoice": {
                   "type": "string"
                 },
                 "published_at": {

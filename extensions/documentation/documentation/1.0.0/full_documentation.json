@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/16/2021 3:00:28 AM"
+    "x-generation-date": "07/18/2021 12:27:13 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6968,6 +6968,9 @@
           "contact_email": {
             "type": "string"
           },
+          "alamat": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -6992,6 +6995,9 @@
             "type": "string"
           },
           "contact_email": {
+            "type": "string"
+          },
+          "alamat": {
             "type": "string"
           },
           "published_at": {
@@ -7905,6 +7911,9 @@
                 "penarikan": {
                   "type": "component"
                 },
+                "verified": {
+                  "type": "boolean"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -7918,6 +7927,9 @@
             }
           },
           "kode_invoice": {
+            "type": "string"
+          },
+          "link_invoice": {
             "type": "string"
           },
           "published_at": {
@@ -8002,6 +8014,9 @@
             }
           },
           "kode_invoice": {
+            "type": "string"
+          },
+          "link_invoice": {
             "type": "string"
           },
           "published_at": {
@@ -8464,6 +8479,9 @@
               "pembeli": {
                 "type": "string"
               },
+              "tes": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -8683,6 +8701,9 @@
                   }
                 },
                 "kode_invoice": {
+                  "type": "string"
+                },
+                "link_invoice": {
                   "type": "string"
                 },
                 "published_at": {
@@ -8928,6 +8949,9 @@
               "penarikan": {
                 "type": "component"
               },
+              "verified": {
+                "type": "boolean"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -9147,6 +9171,9 @@
               "penarikan": {
                 "type": "component"
               },
+              "verified": {
+                "type": "boolean"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -9233,6 +9260,9 @@
                       "type": "string"
                     },
                     "pembeli": {
+                      "type": "string"
+                    },
+                    "tes": {
                       "type": "string"
                     },
                     "created_by": {
@@ -9373,6 +9403,9 @@
                       "type": "string"
                     },
                     "pembeli": {
+                      "type": "string"
+                    },
+                    "tes": {
                       "type": "string"
                     },
                     "created_by": {
@@ -9860,6 +9893,9 @@
               "pembeli": {
                 "type": "string"
               },
+              "tes": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -9998,6 +10034,9 @@
                     "pembeli": {
                       "type": "string"
                     },
+                    "tes": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -10106,6 +10145,9 @@
                 "kode_invoice": {
                   "type": "string"
                 },
+                "link_invoice": {
+                  "type": "string"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -10170,6 +10212,10 @@
                 }
               }
             }
+          },
+          "verified": {
+            "type": "boolean",
+            "default": false
           },
           "published_at": {
             "type": "string",
@@ -10287,6 +10333,9 @@
                     "pembeli": {
                       "type": "string"
                     },
+                    "tes": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -10371,6 +10420,10 @@
                 }
               }
             }
+          },
+          "verified": {
+            "type": "boolean",
+            "default": false
           },
           "published_at": {
             "type": "string",
@@ -10496,6 +10549,9 @@
                   "type": "string"
                 },
                 "pembeli": {
+                  "type": "string"
+                },
+                "tes": {
                   "type": "string"
                 },
                 "created_by": {
@@ -10709,6 +10765,9 @@
               "penarikan": {
                 "type": "component"
               },
+              "verified": {
+                "type": "boolean"
+              },
               "published_at": {
                 "type": "string"
               },
@@ -10826,6 +10885,9 @@
                 "type": "string"
               }
             }
+          },
+          "tes": {
+            "type": "string"
           }
         }
       },
@@ -10878,6 +10940,9 @@
             "type": "string"
           },
           "pembeli": {
+            "type": "string"
+          },
+          "tes": {
             "type": "string"
           },
           "created_by": {

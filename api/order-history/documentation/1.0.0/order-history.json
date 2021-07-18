@@ -796,6 +796,9 @@
                 "penarikan": {
                   "type": "component"
                 },
+                "verified": {
+                  "type": "boolean"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -809,6 +812,9 @@
             }
           },
           "kode_invoice": {
+            "type": "string"
+          },
+          "link_invoice": {
             "type": "string"
           },
           "published_at": {
@@ -893,6 +899,9 @@
             }
           },
           "kode_invoice": {
+            "type": "string"
+          },
+          "link_invoice": {
             "type": "string"
           },
           "published_at": {

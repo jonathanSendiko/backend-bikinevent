@@ -4,6 +4,7 @@ const {
   createUser,
   deleteUser,
   userExists,
+  getUsersInRoom,
 } = require("./utils/database");
 
 module.exports = () => {
@@ -18,8 +19,8 @@ module.exports = () => {
   io.on("connection", function (socket) {
     socket.on("join", async ({ username, room }, callback) => {
       try {
+        console.log(socket.id);
         const userExists = await findUser(username, room);
-
         if (userExists.length > 0) {
           callback(
             `User ${username} already exists in room no${room}. Please select a different name or room`
@@ -29,9 +30,8 @@ module.exports = () => {
             username: username,
             room: room,
             status: "ONLINE",
-            socketId: socket.id,
+            socketid: socket.id,
           });
-
           if (user) {
             socket.join(user.room);
             socket.emit("welcome", {
