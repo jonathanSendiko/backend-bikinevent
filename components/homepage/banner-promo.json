@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_homepage_banner_promos",
+  "info": {
+    "name": "banner_promo",
+    "icon": "align-left",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "promo_banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "link": {
+      "type": "string"
+    }
+  }
+}

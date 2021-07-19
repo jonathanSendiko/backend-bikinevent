@@ -82,9 +82,6 @@
     "pembeli": {
       "via": "user",
       "model": "pembeli"
-    },
-    "tes": {
-      "type": "string"
     }
   }
 }

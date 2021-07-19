@@ -5,4 +5,17 @@ const { sanitizeEntity } = require("strapi-utils");
  * to customize this controller
  */
 
-module.exports = {};
+module.exports = {
+  async findOne(ctx) {
+    const { id } = ctx.params;
+    const entity = await strapi.services["order-history"].findOne({ id }, [
+      {
+        path: "produks vendors pembeli",
+        populate: {
+          path: "vendor user",
+        },
+      },
+    ]);
+    return sanitizeEntity(entity, { model: strapi.models["order-history"] });
+  },
+};

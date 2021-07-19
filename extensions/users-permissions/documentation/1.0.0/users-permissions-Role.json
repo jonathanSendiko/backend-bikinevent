@@ -576,9 +576,6 @@
                 "pembeli": {
                   "type": "string"
                 },
-                "tes": {
-                  "type": "string"
-                },
                 "created_by": {
                   "type": "string"
                 },

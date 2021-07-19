@@ -12,18 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "promo_banner": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "popular_product": {
       "type": "component",
       "repeatable": false,
@@ -38,6 +26,11 @@
       "type": "component",
       "repeatable": true,
       "component": "homepage.kategori"
+    },
+    "banner_promo": {
+      "type": "component",
+      "repeatable": true,
+      "component": "homepage.banner-promo"
     }
   }
 }
