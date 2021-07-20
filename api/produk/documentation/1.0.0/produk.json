@@ -722,7 +722,8 @@
             ]
           },
           "rating": {
-            "type": "number"
+            "type": "number",
+            "default": 0
           },
           "penilaian": {
             "type": "array",
@@ -862,7 +863,8 @@
             ]
           },
           "rating": {
-            "type": "number"
+            "type": "number",
+            "default": 0
           },
           "penilaian": {
             "type": "array",

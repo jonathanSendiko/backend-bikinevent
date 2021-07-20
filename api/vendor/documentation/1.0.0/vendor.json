@@ -1196,6 +1196,9 @@
                 "link_invoice": {
                   "type": "string"
                 },
+                "rate_status": {
+                  "type": "component"
+                },
                 "published_at": {
                   "type": "string"
                 },

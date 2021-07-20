@@ -817,6 +817,24 @@
           "link_invoice": {
             "type": "string"
           },
+          "rate_status": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "rated": {
+                  "type": "boolean",
+                  "default": false
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -903,6 +921,24 @@
           },
           "link_invoice": {
             "type": "string"
+          },
+          "rate_status": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "rated": {
+                  "type": "boolean",
+                  "default": false
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/20/2021 2:02:26 AM"
+    "x-generation-date": "07/21/2021 3:10:57 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -8030,6 +8030,24 @@
           "link_invoice": {
             "type": "string"
           },
+          "rate_status": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "rated": {
+                  "type": "boolean",
+                  "default": false
+                }
+              }
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -8116,6 +8134,24 @@
           },
           "link_invoice": {
             "type": "string"
+          },
+          "rate_status": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "rated": {
+                  "type": "boolean",
+                  "default": false
+                }
+              }
+            }
           },
           "published_at": {
             "type": "string",
@@ -8801,6 +8837,9 @@
                 "link_invoice": {
                   "type": "string"
                 },
+                "rate_status": {
+                  "type": "component"
+                },
                 "published_at": {
                   "type": "string"
                 },
@@ -9292,7 +9331,8 @@
             ]
           },
           "rating": {
-            "type": "number"
+            "type": "number",
+            "default": 0
           },
           "penilaian": {
             "type": "array",
@@ -9432,7 +9472,8 @@
             ]
           },
           "rating": {
-            "type": "number"
+            "type": "number",
+            "default": 0
           },
           "penilaian": {
             "type": "array",
@@ -10230,6 +10271,9 @@
                 },
                 "link_invoice": {
                   "type": "string"
+                },
+                "rate_status": {
+                  "type": "component"
                 },
                 "published_at": {
                   "type": "string"

@@ -52,7 +52,8 @@
       ]
     },
     "rating": {
-      "type": "decimal"
+      "type": "decimal",
+      "default": 0
     },
     "penilaian": {
       "type": "component",

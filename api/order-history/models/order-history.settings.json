@@ -60,6 +60,11 @@
     },
     "link_invoice": {
       "type": "string"
+    },
+    "rate_status": {
+      "type": "component",
+      "repeatable": true,
+      "component": "products.rate-status"
     }
   }
 }
