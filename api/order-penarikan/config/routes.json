@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/order-penarikans",
+      "handler": "order-penarikan.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/order-penarikans/count",
+      "handler": "order-penarikan.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/order-penarikans/:id",
+      "handler": "order-penarikan.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/order-penarikans",
+      "handler": "order-penarikan.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/order-penarikans/:id",
+      "handler": "order-penarikan.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/order-penarikans/:id",
+      "handler": "order-penarikan.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -776,7 +776,8 @@
                   "type": "string",
                   "enum": [
                     "Pending",
-                    "Paid",
+                    "Confirmed",
+                    "Implemented",
                     "Completed"
                   ]
                 },

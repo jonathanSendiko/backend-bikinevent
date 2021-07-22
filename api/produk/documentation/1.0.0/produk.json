@@ -693,11 +693,14 @@
               "keuangan": {
                 "type": "component"
               },
-              "penarikan": {
-                "type": "component"
-              },
               "verified": {
                 "type": "boolean"
+              },
+              "order_penarikans": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
               },
               "published_at": {
                 "type": "string"

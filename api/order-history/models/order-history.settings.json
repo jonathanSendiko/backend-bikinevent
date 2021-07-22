@@ -38,7 +38,8 @@
       "type": "enumeration",
       "enum": [
         "Pending",
-        "Paid",
+        "Confirmed",
+        "Implemented",
         "Completed"
       ]
     },

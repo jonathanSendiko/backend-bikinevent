@@ -1174,7 +1174,8 @@
                   "type": "string",
                   "enum": [
                     "Pending",
-                    "Paid",
+                    "Confirmed",
+                    "Implemented",
                     "Completed"
                   ]
                 },
@@ -1234,10 +1235,13 @@
               }
             }
           },
-          "penarikan": {
+          "verified": {
+            "type": "boolean",
+            "default": false
+          },
+          "order_penarikans": {
             "type": "array",
             "items": {
-              "type": "object",
               "required": [
                 "id"
               ],
@@ -1251,22 +1255,29 @@
                 "no_rekening": {
                   "type": "integer"
                 },
-                "pemilik_rekening": {
+                "nama_rekening": {
                   "type": "string"
                 },
                 "jumlah": {
                   "type": "integer"
                 },
-                "tanggal_penarikan": {
-                  "type": "string",
-                  "format": "date"
+                "withdrawn": {
+                  "type": "boolean"
+                },
+                "vendor": {
+                  "type": "string"
+                },
+                "published_at": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
                 }
               }
             }
-          },
-          "verified": {
-            "type": "boolean",
-            "default": false
           },
           "published_at": {
             "type": "string",
@@ -1439,39 +1450,15 @@
               }
             }
           },
-          "penarikan": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "nama_bank": {
-                  "type": "string"
-                },
-                "no_rekening": {
-                  "type": "integer"
-                },
-                "pemilik_rekening": {
-                  "type": "string"
-                },
-                "jumlah": {
-                  "type": "integer"
-                },
-                "tanggal_penarikan": {
-                  "type": "string",
-                  "format": "date"
-                }
-              }
-            }
-          },
           "verified": {
             "type": "boolean",
             "default": false
+          },
+          "order_penarikans": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "published_at": {
             "type": "string",

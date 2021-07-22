@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "order_penarikans",
+  "info": {
+    "name": "order_penarikan"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama_bank": {
+      "type": "string"
+    },
+    "no_rekening": {
+      "type": "integer"
+    },
+    "nama_rekening": {
+      "type": "string"
+    },
+    "jumlah": {
+      "type": "integer"
+    },
+    "withdrawn": {
+      "type": "boolean"
+    },
+    "vendor": {
+      "via": "order_penarikans",
+      "model": "vendor"
+    }
+  }
+}

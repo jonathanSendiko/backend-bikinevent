@@ -138,14 +138,13 @@
       "repeatable": false,
       "component": "vendor-related.keuangan"
     },
-    "penarikan": {
-      "type": "component",
-      "repeatable": true,
-      "component": "vendor-related.penarikan"
-    },
     "verified": {
       "type": "boolean",
       "default": false
+    },
+    "order_penarikans": {
+      "via": "vendor",
+      "collection": "order-penarikan"
     }
   }
 }
