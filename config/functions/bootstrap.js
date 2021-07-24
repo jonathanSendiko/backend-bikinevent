@@ -1,10 +1,9 @@
 "use strict";
 const {
-  findUser,
-  createUser,
-  deleteUser,
   userExists,
   getUsersInRoom,
+  userUpdateRoom,
+  userDisconnect,
 } = require("./utils/database");
 
 module.exports = () => {
@@ -19,34 +18,28 @@ module.exports = () => {
   io.on("connection", function (socket) {
     socket.on("join", async ({ username, room }, callback) => {
       try {
-        console.log(socket.id);
-        const userExists = await findUser(username, room);
-        if (userExists.length > 0) {
-          callback(
-            `User ${username} already exists in room no${room}. Please select a different name or room`
-          );
-        } else {
-          const user = await createUser({
-            username: username,
-            room: room,
-            status: "ONLINE",
-            socketid: socket.id,
+        const user = await userUpdateRoom({
+          username: username,
+          room: room,
+          status: "ONLINE",
+          socketid: socket.id,
+        });
+
+        if (user) {
+          socket.join(user.room);
+          socket.emit("welcome", {
+            user: "bot",
+            text: `${user.username}, Welcome to room ${user.room}.`,
+            userData: user,
           });
-          if (user) {
-            socket.join(user.room);
-            socket.emit("welcome", {
-              user: "bot",
-              text: `${user.username}, Welcome to room ${user.room}.`,
-              userData: user,
-            });
-            socket.broadcast.to(user.room).emit("message", {
-              user: "bot",
-              text: `${user.username} has joined`,
-            });
-          } else {
-            callback(`user could not be created. Try again!`);
-          }
+          socket.broadcast.to(user.room).emit("message", {
+            user: "bot",
+            text: `${user.username} has joined`,
+          });
+        } else {
+          callback(`user could not be created. Try again!`);
         }
+
         callback();
       } catch (err) {
         console.log("Err occured, Try again!", err);
@@ -75,8 +68,11 @@ module.exports = () => {
     socket.on("disconnect", async (data) => {
       try {
         console.log("DISCONNECTED!!!!!!!!!!!!");
-        const user = await deleteUser(socket.id);
-        console.log("deleted user is", user);
+        const user = await userDisconnect({
+          room: "",
+          status: "OFFLINE",
+          socketid: socket.id,
+        });
         if (user.length > 0) {
           io.to(user[0].room).emit("message", {
             user: user[0].username,

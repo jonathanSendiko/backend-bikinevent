@@ -82,6 +82,15 @@
     "pembeli": {
       "via": "user",
       "model": "pembeli"
+    },
+    "room": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "socketid": {
+      "type": "string"
     }
   }
 }

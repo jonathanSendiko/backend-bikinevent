@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "07/22/2021 11:59:16 AM"
+    "x-generation-date": "07/24/2021 5:26:38 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -9312,6 +9312,15 @@
               "pembeli": {
                 "type": "string"
               },
+              "room": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "socketid": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -10103,6 +10112,15 @@
                     "pembeli": {
                       "type": "string"
                     },
+                    "room": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "socketid": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -10242,6 +10260,15 @@
                       "type": "string"
                     },
                     "pembeli": {
+                      "type": "string"
+                    },
+                    "room": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "socketid": {
                       "type": "string"
                     },
                     "created_by": {
@@ -10729,6 +10756,15 @@
               "pembeli": {
                 "type": "string"
               },
+              "room": {
+                "type": "string"
+              },
+              "status": {
+                "type": "string"
+              },
+              "socketid": {
+                "type": "string"
+              },
               "created_by": {
                 "type": "string"
               },
@@ -10865,6 +10901,15 @@
                       "type": "string"
                     },
                     "pembeli": {
+                      "type": "string"
+                    },
+                    "room": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "socketid": {
                       "type": "string"
                     },
                     "created_by": {
@@ -11177,6 +11222,15 @@
                     "pembeli": {
                       "type": "string"
                     },
+                    "room": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "socketid": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -11366,6 +11420,15 @@
                   "type": "string"
                 },
                 "pembeli": {
+                  "type": "string"
+                },
+                "room": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                },
+                "socketid": {
                   "type": "string"
                 },
                 "created_by": {
@@ -11702,6 +11765,15 @@
                 "type": "string"
               }
             }
+          },
+          "room": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "socketid": {
+            "type": "string"
           }
         }
       },
@@ -11754,6 +11826,15 @@
             "type": "string"
           },
           "pembeli": {
+            "type": "string"
+          },
+          "room": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "socketid": {
             "type": "string"
           },
           "created_by": {

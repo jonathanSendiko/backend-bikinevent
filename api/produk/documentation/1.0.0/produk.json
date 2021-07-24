@@ -791,6 +791,15 @@
                     "pembeli": {
                       "type": "string"
                     },
+                    "room": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "socketid": {
+                      "type": "string"
+                    },
                     "created_by": {
                       "type": "string"
                     },
@@ -930,6 +939,15 @@
                       "type": "string"
                     },
                     "pembeli": {
+                      "type": "string"
+                    },
+                    "room": {
+                      "type": "string"
+                    },
+                    "status": {
+                      "type": "string"
+                    },
+                    "socketid": {
                       "type": "string"
                     },
                     "created_by": {
