@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_user_related_messages",
+  "info": {
+    "name": "messages",
+    "icon": "asterisk"
+  },
+  "options": {},
+  "attributes": {
+    "message": {
+      "type": "string"
+    }
+  }
+}
