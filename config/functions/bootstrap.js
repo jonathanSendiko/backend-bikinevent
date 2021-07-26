@@ -3,7 +3,7 @@
 module.exports = () => {
   var io = require("socket.io")(strapi.server, {
     cors: {
-      origin: "http://localhost:3000",
+      origin: "https://bikinevent.id",
       methods: ["GET", "POST"],
       allowedHeaders: ["my-custom-header"],
       credentials: true,
