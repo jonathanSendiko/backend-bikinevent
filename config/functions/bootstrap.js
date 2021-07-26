@@ -1,15 +1,9 @@
 "use strict";
-const {
-  userExists,
-  getUsersInRoom,
-  userUpdateRoom,
-  userDisconnect,
-} = require("./utils/database");
 
 module.exports = () => {
   var io = require("socket.io")(strapi.server, {
     cors: {
-      origin: "https://bikinevent.id",
+      origin: "http://localhost:3000",
       methods: ["GET", "POST"],
       allowedHeaders: ["my-custom-header"],
       credentials: true,
