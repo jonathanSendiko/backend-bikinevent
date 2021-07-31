@@ -32,6 +32,15 @@
     },
     "alamat": {
       "type": "text"
+    },
+    "link_tiktok": {
+      "type": "string"
+    },
+    "link_twitter": {
+      "type": "string"
+    },
+    "link_medium": {
+      "type": "string"
     }
   }
 }
