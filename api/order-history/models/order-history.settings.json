@@ -19,9 +19,6 @@
       "via": "order_histories",
       "model": "pembeli"
     },
-    "rating": {
-      "type": "float"
-    },
     "informasi_pembeli": {
       "type": "component",
       "repeatable": false,
@@ -37,10 +34,12 @@
     "status": {
       "type": "enumeration",
       "enum": [
-        "Pending",
-        "Confirmed",
-        "Implemented",
-        "Completed"
+        "MenungguKonfirmasi",
+        "PesananTerkonfirmasi",
+        "MenungguPembayaranBertahap",
+        "PembayaranLunas",
+        "MempersiapkanLayanan",
+        "LayananSelesai"
       ]
     },
     "total_price": {

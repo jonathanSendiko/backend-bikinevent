@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "08/01/2021 12:42:44 AM"
+    "x-generation-date": "08/02/2021 12:01:32 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -9799,9 +9799,6 @@
               }
             }
           },
-          "rating": {
-            "type": "number"
-          },
           "informasi_pembeli": {
             "type": "object",
             "required": [
@@ -9832,10 +9829,12 @@
           "status": {
             "type": "string",
             "enum": [
-              "Pending",
-              "Confirmed",
-              "Implemented",
-              "Completed"
+              "MenungguKonfirmasi",
+              "PesananTerkonfirmasi",
+              "MenungguPembayaranBertahap",
+              "PembayaranLunas",
+              "MempersiapkanLayanan",
+              "LayananSelesai"
             ]
           },
           "total_price": {
@@ -10011,9 +10010,6 @@
           "pembeli": {
             "type": "string"
           },
-          "rating": {
-            "type": "number"
-          },
           "informasi_pembeli": {
             "type": "object",
             "required": [
@@ -10044,10 +10040,12 @@
           "status": {
             "type": "string",
             "enum": [
-              "Pending",
-              "Confirmed",
-              "Implemented",
-              "Completed"
+              "MenungguKonfirmasi",
+              "PesananTerkonfirmasi",
+              "MenungguPembayaranBertahap",
+              "PembayaranLunas",
+              "MempersiapkanLayanan",
+              "LayananSelesai"
             ]
           },
           "total_price": {
@@ -10925,9 +10923,6 @@
                 "pembeli": {
                   "type": "string"
                 },
-                "rating": {
-                  "type": "number"
-                },
                 "informasi_pembeli": {
                   "type": "component"
                 },
@@ -10940,10 +10935,12 @@
                 "status": {
                   "type": "string",
                   "enum": [
-                    "Pending",
-                    "Confirmed",
-                    "Implemented",
-                    "Completed"
+                    "MenungguKonfirmasi",
+                    "PesananTerkonfirmasi",
+                    "MenungguPembayaranBertahap",
+                    "PembayaranLunas",
+                    "MempersiapkanLayanan",
+                    "LayananSelesai"
                   ]
                 },
                 "total_price": {
@@ -12612,9 +12609,6 @@
                 "pembeli": {
                   "type": "string"
                 },
-                "rating": {
-                  "type": "number"
-                },
                 "informasi_pembeli": {
                   "type": "component"
                 },
@@ -12627,10 +12621,12 @@
                 "status": {
                   "type": "string",
                   "enum": [
-                    "Pending",
-                    "Confirmed",
-                    "Implemented",
-                    "Completed"
+                    "MenungguKonfirmasi",
+                    "PesananTerkonfirmasi",
+                    "MenungguPembayaranBertahap",
+                    "PembayaranLunas",
+                    "MempersiapkanLayanan",
+                    "LayananSelesai"
                   ]
                 },
                 "total_price": {

@@ -769,9 +769,6 @@
                 "pembeli": {
                   "type": "string"
                 },
-                "rating": {
-                  "type": "number"
-                },
                 "informasi_pembeli": {
                   "type": "component"
                 },
@@ -784,10 +781,12 @@
                 "status": {
                   "type": "string",
                   "enum": [
-                    "Pending",
-                    "Confirmed",
-                    "Implemented",
-                    "Completed"
+                    "MenungguKonfirmasi",
+                    "PesananTerkonfirmasi",
+                    "MenungguPembayaranBertahap",
+                    "PembayaranLunas",
+                    "MempersiapkanLayanan",
+                    "LayananSelesai"
                   ]
                 },
                 "total_price": {
