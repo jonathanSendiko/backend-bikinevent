@@ -661,6 +661,9 @@
               },
               "alamat_pembeli": {
                 "type": "string"
+              },
+              "email": {
+                "type": "string"
               }
             }
           },
@@ -834,6 +837,10 @@
                 "rated": {
                   "type": "boolean",
                   "default": false
+                },
+                "rating": {
+                  "type": "number",
+                  "default": 0
                 }
               }
             }
@@ -871,6 +878,9 @@
                 "type": "string"
               },
               "alamat_pembeli": {
+                "type": "string"
+              },
+              "email": {
                 "type": "string"
               }
             }
@@ -939,6 +949,10 @@
                 "rated": {
                   "type": "boolean",
                   "default": false
+                },
+                "rating": {
+                  "type": "number",
+                  "default": 0
                 }
               }
             }

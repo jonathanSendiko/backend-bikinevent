@@ -679,6 +679,9 @@
                 },
                 "alamat_pembeli": {
                   "type": "string"
+                },
+                "email": {
+                  "type": "string"
                 }
               }
             }
@@ -857,6 +860,9 @@
                   "type": "string"
                 },
                 "alamat_pembeli": {
+                  "type": "string"
+                },
+                "email": {
                   "type": "string"
                 }
               }

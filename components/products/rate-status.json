@@ -10,6 +10,10 @@
     "rated": {
       "type": "boolean",
       "default": false
+    },
+    "rating": {
+      "type": "decimal",
+      "default": 0
     }
   }
 }
