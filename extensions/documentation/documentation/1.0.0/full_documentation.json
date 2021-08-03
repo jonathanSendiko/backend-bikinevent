@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "08/03/2021 1:58:56 PM"
+    "x-generation-date": "08/03/2021 4:50:00 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -10006,9 +10006,6 @@
                 "foto_profil": {
                   "type": "string"
                 },
-                "comments": {
-                  "type": "component"
-                },
                 "portfolios": {
                   "type": "array",
                   "items": {
@@ -10299,9 +10296,6 @@
               },
               "foto_profil": {
                 "type": "string"
-              },
-              "comments": {
-                "type": "component"
               },
               "portfolios": {
                 "type": "array",
@@ -11297,9 +11291,6 @@
               "foto_profil": {
                 "type": "string"
               },
-              "comments": {
-                "type": "component"
-              },
               "portfolios": {
                 "type": "array",
                 "items": {
@@ -11521,9 +11512,6 @@
               },
               "foto_profil": {
                 "type": "string"
-              },
-              "comments": {
-                "type": "component"
               },
               "portfolios": {
                 "type": "array",
@@ -12578,95 +12566,6 @@
               }
             }
           },
-          "comments": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "user": {
-                  "required": [
-                    "id",
-                    "username",
-                    "email"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "username": {
-                      "type": "string"
-                    },
-                    "email": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "password": {
-                      "type": "string"
-                    },
-                    "resetPasswordToken": {
-                      "type": "string"
-                    },
-                    "confirmationToken": {
-                      "type": "string"
-                    },
-                    "confirmed": {
-                      "type": "boolean"
-                    },
-                    "blocked": {
-                      "type": "boolean"
-                    },
-                    "role": {
-                      "type": "string"
-                    },
-                    "phone_number": {
-                      "type": "string"
-                    },
-                    "nama_lengkap": {
-                      "type": "string"
-                    },
-                    "vendor": {
-                      "type": "string"
-                    },
-                    "foto_profil": {
-                      "type": "string"
-                    },
-                    "pembeli": {
-                      "type": "string"
-                    },
-                    "room": {
-                      "type": "string"
-                    },
-                    "status": {
-                      "type": "string"
-                    },
-                    "socketid": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                },
-                "rating": {
-                  "type": "number"
-                },
-                "komentar": {
-                  "type": "string"
-                }
-              }
-            }
-          },
           "portfolios": {
             "type": "array",
             "items": {
@@ -12904,95 +12803,6 @@
           },
           "user": {
             "type": "string"
-          },
-          "comments": {
-            "type": "array",
-            "items": {
-              "type": "object",
-              "required": [
-                "id"
-              ],
-              "properties": {
-                "id": {
-                  "type": "string"
-                },
-                "user": {
-                  "required": [
-                    "id",
-                    "username",
-                    "email"
-                  ],
-                  "properties": {
-                    "id": {
-                      "type": "string"
-                    },
-                    "username": {
-                      "type": "string"
-                    },
-                    "email": {
-                      "type": "string"
-                    },
-                    "provider": {
-                      "type": "string"
-                    },
-                    "password": {
-                      "type": "string"
-                    },
-                    "resetPasswordToken": {
-                      "type": "string"
-                    },
-                    "confirmationToken": {
-                      "type": "string"
-                    },
-                    "confirmed": {
-                      "type": "boolean"
-                    },
-                    "blocked": {
-                      "type": "boolean"
-                    },
-                    "role": {
-                      "type": "string"
-                    },
-                    "phone_number": {
-                      "type": "string"
-                    },
-                    "nama_lengkap": {
-                      "type": "string"
-                    },
-                    "vendor": {
-                      "type": "string"
-                    },
-                    "foto_profil": {
-                      "type": "string"
-                    },
-                    "pembeli": {
-                      "type": "string"
-                    },
-                    "room": {
-                      "type": "string"
-                    },
-                    "status": {
-                      "type": "string"
-                    },
-                    "socketid": {
-                      "type": "string"
-                    },
-                    "created_by": {
-                      "type": "string"
-                    },
-                    "updated_by": {
-                      "type": "string"
-                    }
-                  }
-                },
-                "rating": {
-                  "type": "number"
-                },
-                "komentar": {
-                  "type": "string"
-                }
-              }
-            }
           },
           "portfolios": {
             "type": "array",
@@ -13363,9 +13173,6 @@
               },
               "foto_profil": {
                 "type": "string"
-              },
-              "comments": {
-                "type": "component"
               },
               "portfolios": {
                 "type": "array",

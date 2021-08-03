@@ -1325,9 +1325,6 @@
               "foto_profil": {
                 "type": "string"
               },
-              "comments": {
-                "type": "component"
-              },
               "portfolios": {
                 "type": "array",
                 "items": {

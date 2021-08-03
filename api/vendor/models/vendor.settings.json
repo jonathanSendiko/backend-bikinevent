@@ -117,11 +117,6 @@
       "required": false,
       "pluginOptions": {}
     },
-    "comments": {
-      "type": "component",
-      "repeatable": true,
-      "component": "vendor-related.penilaian"
-    },
     "portfolios": {
       "collection": "portfolio",
       "via": "vendor"
