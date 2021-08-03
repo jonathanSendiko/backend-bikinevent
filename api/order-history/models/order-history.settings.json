@@ -36,7 +36,16 @@
       "enum": [
         "MenungguKonfirmasi",
         "PesananTerkonfirmasi",
-        "MenungguPembayaranBertahap",
+        "MenungguPembayaranTahap1",
+        "MenungguPembayaranTahap2",
+        "MenungguPembayaranTahap3",
+        "MenungguPembayaranTahap4",
+        "MenungguPembayaranTahap5",
+        "MenungguPembayaranTahap6",
+        "MenungguPembayaranTahap7",
+        "MenungguPembayaranTahap8",
+        "MenungguPembayaranTahap9",
+        "MenungguPembayaranTahap10",
         "PembayaranLunas",
         "MempersiapkanLayanan",
         "LayananSelesai"

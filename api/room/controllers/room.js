@@ -8,9 +8,19 @@ const { sanitizeEntity } = require("strapi-utils");
 module.exports = {
   async findUserRoom(ctx) {
     const { userId } = ctx.params;
-    const entity = await strapi.services.room.find({
-      userId: userId,
-    });
+    const entity = await strapi.services.room.find(
+      {
+        userId: userId,
+      },
+      [
+        {
+          path: "userId vendorId messages",
+          populate: {
+            path: "vendor",
+          },
+        },
+      ]
+    );
     return sanitizeEntity(entity, { model: strapi.models.room });
   },
   async findVendorRoom(ctx) {

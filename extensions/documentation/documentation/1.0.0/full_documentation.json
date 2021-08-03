@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "08/02/2021 9:55:05 AM"
+    "x-generation-date": "08/03/2021 1:58:56 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -9901,7 +9901,16 @@
             "enum": [
               "MenungguKonfirmasi",
               "PesananTerkonfirmasi",
-              "MenungguPembayaranBertahap",
+              "MenungguPembayaranTahap1",
+              "MenungguPembayaranTahap2",
+              "MenungguPembayaranTahap3",
+              "MenungguPembayaranTahap4",
+              "MenungguPembayaranTahap5",
+              "MenungguPembayaranTahap6",
+              "MenungguPembayaranTahap7",
+              "MenungguPembayaranTahap8",
+              "MenungguPembayaranTahap9",
+              "MenungguPembayaranTahap10",
               "PembayaranLunas",
               "MempersiapkanLayanan",
               "LayananSelesai"
@@ -10119,7 +10128,16 @@
             "enum": [
               "MenungguKonfirmasi",
               "PesananTerkonfirmasi",
-              "MenungguPembayaranBertahap",
+              "MenungguPembayaranTahap1",
+              "MenungguPembayaranTahap2",
+              "MenungguPembayaranTahap3",
+              "MenungguPembayaranTahap4",
+              "MenungguPembayaranTahap5",
+              "MenungguPembayaranTahap6",
+              "MenungguPembayaranTahap7",
+              "MenungguPembayaranTahap8",
+              "MenungguPembayaranTahap9",
+              "MenungguPembayaranTahap10",
               "PembayaranLunas",
               "MempersiapkanLayanan",
               "LayananSelesai"
@@ -11021,7 +11039,16 @@
                   "enum": [
                     "MenungguKonfirmasi",
                     "PesananTerkonfirmasi",
-                    "MenungguPembayaranBertahap",
+                    "MenungguPembayaranTahap1",
+                    "MenungguPembayaranTahap2",
+                    "MenungguPembayaranTahap3",
+                    "MenungguPembayaranTahap4",
+                    "MenungguPembayaranTahap5",
+                    "MenungguPembayaranTahap6",
+                    "MenungguPembayaranTahap7",
+                    "MenungguPembayaranTahap8",
+                    "MenungguPembayaranTahap9",
+                    "MenungguPembayaranTahap10",
                     "PembayaranLunas",
                     "MempersiapkanLayanan",
                     "LayananSelesai"
@@ -12710,7 +12737,16 @@
                   "enum": [
                     "MenungguKonfirmasi",
                     "PesananTerkonfirmasi",
-                    "MenungguPembayaranBertahap",
+                    "MenungguPembayaranTahap1",
+                    "MenungguPembayaranTahap2",
+                    "MenungguPembayaranTahap3",
+                    "MenungguPembayaranTahap4",
+                    "MenungguPembayaranTahap5",
+                    "MenungguPembayaranTahap6",
+                    "MenungguPembayaranTahap7",
+                    "MenungguPembayaranTahap8",
+                    "MenungguPembayaranTahap9",
+                    "MenungguPembayaranTahap10",
                     "PembayaranLunas",
                     "MempersiapkanLayanan",
                     "LayananSelesai"
