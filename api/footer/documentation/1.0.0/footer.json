@@ -348,6 +348,9 @@
           "link_medium": {
             "type": "string"
           },
+          "link_pelaporan": {
+            "type": "string"
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -384,6 +387,9 @@
             "type": "string"
           },
           "link_medium": {
+            "type": "string"
+          },
+          "link_pelaporan": {
             "type": "string"
           },
           "published_at": {

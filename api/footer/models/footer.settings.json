@@ -41,6 +41,9 @@
     },
     "link_medium": {
       "type": "string"
+    },
+    "link_pelaporan": {
+      "type": "string"
     }
   }
 }
